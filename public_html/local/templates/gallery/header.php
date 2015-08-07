@@ -5,14 +5,31 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link href="./layout/css/frontend.css" rel="stylesheet">
-  <script type="text/javascript" src="./layout/js/frontend.js" async></script>
-  <title>Олдтаймер</title><!--[if lt IE 9]>
+  <?
+  $APPLICATION->SetAdditionalCSS("/layout/css/frontend.css", true);
+  $APPLICATION->AddHeadScript('/layout/js/frontend.js');
+  global $CITY;
+  ?>
+  <title><?php
+    $rsSites = CSite::GetByID(SITE_ID);
+    $arSite  = $rsSites->Fetch();
+    if($APPLICATION->GetCurDir() != '/' && $APPLICATION->GetCurDir() != "/eng/") {
+      $APPLICATION->ShowTitle();
+
+      echo ' | ' . $arSite['NAME'];
+    }
+    else echo $arSite['NAME'];
+    ?></title>
+  <?
+    $APPLICATION->ShowHead();
+  ?>
+  <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <script src="./layout/js/background_size_emu.js"></script>
   <![endif]-->
 </head><body>
+<div id="panel"><?$APPLICATION->ShowPanel();?></div>
 <div class="toolbar">
   <div class="row">
     <div class="col-xs-3"><a href="#" class="nav-trigger"></a></div>
