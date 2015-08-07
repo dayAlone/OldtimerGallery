@@ -18,7 +18,7 @@ $APPLICATION->SetTitle("Заезды");
       <h2 class="page__title">расписание зaeздов</h2>
       <div class="page__divider"></div>
     </div>
-    <div class="center xxl-margin-top xxl-padding-top"><a href="/buy.html" class="button">насладиться зрелищем</a></div>
+    <div class="center xxl-margin-top xxl-padding-top"><a href="/buy/" class="button">насладиться зрелищем</a></div>
   </div>
 </div>
 <div id="Map" tabindex="-1" role="dialog" aria-hidden="true" data-parsley-validate class="modal fade">

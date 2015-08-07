@@ -19,56 +19,22 @@ $APPLICATION->SetTitle("Выставка");
       <h2 class="page__title">лучшие экспонаты</h2>
       <div class="page__divider"></div>
     </div>
-    <div class="articles">
-      <div class="row">
-        <div class="col-lg-3 col-sm-4">
-          <div class="article article--first">
-            <div class="row">
-              <div class="col-xs-5 col-sm-12"><a href="#Modal" data-toggle="modal" style="background-image:url(/layout/images/gallery-img-1.jpg)" class="article__image"></a></div>
-              <div class="col-xs-7 col-sm-12"><a href="#Modal" data-toggle="modal" class="article__title">Название экспоната в две строки</a>
-                <div class="page__divider"></div>
-                <p class="article__text">«Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-4">
-          <div class="article">
-            <div class="row">
-              <div class="col-xs-5 col-sm-12"><a href="#Modal" data-toggle="modal" style="background-image:url(/layout/images/gallery-img-2.jpg)" class="article__image"></a></div>
-              <div class="col-xs-7 col-sm-12"><a href="#Modal" data-toggle="modal" class="article__title">Другое название экспоната</a>
-                <div class="page__divider"></div>
-                <p class="article__text">«Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время.  </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-4">
-          <div class="article">
-            <div class="row">
-              <div class="col-xs-5 col-sm-12"><a href="#Modal" data-toggle="modal" style="background-image:url(/layout/images/gallery-img-3.jpg)" class="article__image"></a></div>
-              <div class="col-xs-7 col-sm-12"><a href="#Modal" data-toggle="modal" class="article__title">Или что-то еще тут может быть</a>
-                <div class="page__divider"></div>
-                <p class="article__text">«Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 visible-sm visible-md"></div>
-        <div class="col-lg-3 col-sm-4">
-          <div class="article">
-            <div class="row">
-              <div class="col-xs-5 col-sm-12"><a href="#Modal" data-toggle="modal" style="background-image:url(/layout/images/gallery-img-4.jpg)" class="article__image"></a></div>
-              <div class="col-xs-7 col-sm-12"><a href="#Modal" data-toggle="modal" class="article__title">В общем, вариантов много</a>
-                <div class="page__divider"></div>
-                <p class="article__text">«Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="center xxl-margin-top xxl-padding-top"><a href="/buy.html" class="button">посетить выставку</a></div>
+    <?
+		$APPLICATION->IncludeComponent("bitrix:news.list", "articles",
+			array(
+				"IBLOCK_ID"            => 40,
+				"NEWS_COUNT"           => "1000",
+				"SORT_BY1"             => "SORT",
+				"SORT_ORDER1"          => "ASC",
+				"CACHE_TYPE"           => "A",
+                'SECTION_CODE'         => 'gallery',
+				'PROPERTY_CODE'        => array('LINK'),
+				"SET_TITLE"            => "N"
+			),
+			false
+		);
+	?>
+    <div class="center xxl-margin-top xxl-padding-top"><a href="/buy/" class="button">посетить выставку</a></div>
   </div>
   <div id="reviews" class="page__block page__block--orange">
     <div class="center md-left">
