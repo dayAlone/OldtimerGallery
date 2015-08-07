@@ -15,7 +15,7 @@ $APPLICATION->SetTitle("12 причин посетить");
 				"SORT_BY1"             => "SORT",
 				"SORT_ORDER1"          => "ASC",
 				"CACHE_TYPE"           => "A",
-                'SECTION_CODE'         => 'reasons',
+                'PARENT_SECTION_CODE'  => 'reasons',
 				'PROPERTY_CODE'        => array('LINK'),
 				"SET_TITLE"            => "N"
 			),

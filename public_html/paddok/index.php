@@ -28,7 +28,7 @@ $APPLICATION->SetTitle("Паддок");
 				"SORT_BY1"             => "SORT",
 				"SORT_ORDER1"          => "ASC",
 				"CACHE_TYPE"           => "A",
-                'SECTION_CODE'         => 'paddok',
+                'PARENT_SECTION_CODE'  => 'paddok',
 				'PROPERTY_CODE'        => array('LINK'),
 				"SET_TITLE"            => "N"
 			),

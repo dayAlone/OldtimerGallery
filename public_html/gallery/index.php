@@ -27,7 +27,7 @@ $APPLICATION->SetTitle("Выставка");
 				"SORT_BY1"             => "SORT",
 				"SORT_ORDER1"          => "ASC",
 				"CACHE_TYPE"           => "A",
-                'SECTION_CODE'         => 'gallery',
+                'PARENT_SECTION_CODE'  => 'gallery',
 				'PROPERTY_CODE'        => array('LINK'),
 				"SET_TITLE"            => "N"
 			),
