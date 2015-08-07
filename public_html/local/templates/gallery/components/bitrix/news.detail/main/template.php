@@ -5,7 +5,7 @@
       <h1 class="page__title"><?=$item['NAME']?></h1>
       <div class="page__divider"></div>
       <p><?=$item['DETAIL_TEXT']?></p>
-      <?=$item['PROPERTIES']['BUTTONS']['VALUE']['TEXT']?>
+      <?=html_entity_decode($item['PROPERTIES']['BUTTONS']['VALUE']['TEXT'])?>
 
     </div><a href="#Map" data-toggle="modal" class="map map--<?=$item['CODE']?>">
       <div class="map__text">

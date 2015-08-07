@@ -1,18 +1,18 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Заезды");
+    $APPLICATION->IncludeComponent("bitrix:news.detail", "main", Array(
+      "IBLOCK_ID"     => 42,
+      "ELEMENT_CODE"  => 'rally',
+      "CHECK_DATES"   => "N",
+      "IBLOCK_TYPE"   => "gallery2015",
+      "SET_TITLE"     => "Y",
+      "CACHE_TYPE"    => "A",
+      "FIELD_CODE"    => array('PREVIEW_PICTURE'),
+      "PROPERTY_CODE" => array("CLASS", 'BG', 'BUTTONS', 'WHERE')
+
+    ));
 ?>
-  <div style="background-image:url(/layout/images/zaezd-bg-inside.jpg)" class="page__block page__block--promo page__block--black"><img src="/layout/images/person-zaezd.png" class="page__image">
-    <div class="page__content">
-      <h1 class="page__title">Заезды</h1>
-      <div class="page__divider"></div>
-      <p>Эпоха, когда пространство и время покорялись людской воле! Эпоха скорости! Эпоха рекордов! Гоночные суперкары тех великих лет считались утраченными навсегда. Энтузиасты отыскали их, восстановили специально к Фестивалю, доставили в Москву из других городов и стран для участия в уникальных звёздных заездах. Они - стиль и сталь легендарной эпохи. Рёв их прямоточных выхлопов заставит сердца учащённо забиться. Это будет незабываемое зрелище - чёрно-белая кинохроника оживёт на Ваших глазах.</p><a href="#articles" class="button">программа</a>
-    </div><a href="#Map" data-toggle="modal" class="map map--rally">
-      <div class="map__text"><span>где увидеть:<br></span>КВЦ Сокольники<br>павильон 2</div>
-      <div class="map__frame">
-        <div href="#Map" data-toggle="modal" class="map__zoom"></div>
-      </div></a>
-  </div>
   <div id="articles" class="page__block page__block--red">
     <div class="center md-left">
       <h2 class="page__title">расписание зaeздов</h2>

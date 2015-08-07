@@ -1,18 +1,18 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Паддок");
+    $APPLICATION->IncludeComponent("bitrix:news.detail", "main", Array(
+      "IBLOCK_ID"     => 42,
+      "ELEMENT_CODE"  => 'paddok',
+      "CHECK_DATES"   => "N",
+      "IBLOCK_TYPE"   => "gallery2015",
+      "SET_TITLE"     => "Y",
+      "CACHE_TYPE"    => "A",
+      "FIELD_CODE"    => array('PREVIEW_PICTURE'),
+      "PROPERTY_CODE" => array("CLASS", 'BG', 'BUTTONS', 'WHERE')
+
+    ));
 ?>
-  <div style="background-image:url(/layout/images/paddock-bg-inside.jpg)" class="page__block page__block--promo page__block--blue"><img src="/layout/images/person-paddock.png" class="page__image">
-    <div class="page__content">
-      <h1 class="page__title">паддок</h1>
-      <div class="page__divider"></div>
-      <p>Фестиваль Стиля и Скорости посвящается рекордным заездам, легендарным машинам и великим гонщикам 1920-50-х годов. Особенность этого шоу в том, что уникальные спортивные автомобили не будут стоять на месте, как это обычно бывает на выставках. Посетители получат доступ в «святая святых» любой гоночной команды – в паддок, где смогут наблюдать, как машины прогревают, заправляют, ремонтируют, перемещают по площадке и готовят к показательным заездам. Фото и видеосъёмка резрешены!</p><a href="#articles" class="button">ПРЕМЬЕРЫ И СЕНСАЦИИ</a>
-    </div><a href="#Map" data-toggle="modal" class="map map--paddock">
-      <div class="map__text"><span>где увидеть:<br></span>КВЦ Сокольники<br>павильон 2</div>
-      <div class="map__frame">
-        <div class="map__zoom"></div>
-      </div></a>
-  </div>
   <div id="articles" class="page__block page__block--blue">
     <div class="center md-left">
       <h2 class="page__title">ПРЕМЬЕРЫ
