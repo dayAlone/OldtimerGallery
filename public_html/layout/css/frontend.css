@@ -3980,6 +3980,7 @@ svg g {
   text-align: center;
   margin-top: 25px;
   line-height: 20px;
+  white-space: nowrap;
 }
 .sidebar__footer,
 .toolbar__footer {
