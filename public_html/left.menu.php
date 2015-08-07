@@ -1,0 +1,53 @@
+<?
+$aMenuLinks = Array(
+    Array(
+        "выставка",
+        "",
+        array(),
+        array('BIG'=>true),
+        ""
+    ),
+    Array(
+        "паддок",
+        "",
+        array(),
+        array('BIG'=>true),
+        ""
+    ),
+    Array(
+        "заезды",
+        "",
+        array(),
+        array('BIG'=>true),
+        ""
+    ),
+    Array(
+        "12 причин посетить",
+        "",
+        array(),
+        array(),
+        ""
+    ),
+    Array(
+        "Время работы",
+        "",
+        array(),
+        array(),
+        ""
+    ),
+    Array(
+        "Место проведения",
+        "",
+        array(),
+        array(),
+        ""
+    ),
+    Array(
+        "Билеты",
+        "",
+        array(),
+        array(),
+        ""
+    ),
+);
+?>

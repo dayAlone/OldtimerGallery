@@ -48,19 +48,17 @@
     <div class="logo"><a href="/" class="logo__image"></a>
       <div class="logo__text"></div>
     </div>
-    <nav class="sidebar__nav nav">
-      <div class="sidebar__divider no-margin-top"></div>
-        <a href="/gallery.html" class="nav__item nav__item--big">выставка</a><br>
-        <a href="/paddok.html" class="nav__item nav__item--big">паддок</a><br>
-        <a href="/rally.html" class="nav__item nav__item--big">заезды</a><br>
-        <div class="nav__divider"></div>
-        <a href="/reasons.html" class="nav__item ">12 причин посетить</a><br>
-        <a href="/contacts.html" class="nav__item ">Время работы</a><br>
-        <a href="/contacts.html" class="nav__item ">Место проведения</a><br>
-        <a href="/contacts.html" class="nav__item ">Билеты</a><br>
-      <div class="sidebar__divider no-margin-bottom"></div>
-    </nav>
-    <footer class="sidebar__footer"><a href="/buy.html" class="buy">купить билет</a>
+    <?php
+          $APPLICATION->IncludeComponent("bitrix:menu", "sidebar",
+          array(
+              "ALLOW_MULTI_SELECT" => "Y",
+              "MENU_CACHE_TYPE"    => "A",
+              "ROOT_MENU_TYPE"     => "left",
+              "MAX_LEVEL"          => "1",
+              ),
+          false);
+      ?>
+    <footer class="sidebar__footer"><a href="/buy/" class="buy">купить билет</a>
       <div class="sidebar__social">
           <a href="http://oldtimer-ru.livejournal.com" target="_blank" class="social social--lj"></a>
           <a href="https://www.facebook.com/oldtimer.ru" target="_blank" class="social social--fb"></a>
