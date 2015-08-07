@@ -2,49 +2,49 @@
 $aMenuLinks = Array(
     Array(
         "выставка",
-        "",
+        "/gallery/",
         array(),
         array('BIG'=>true),
         ""
     ),
     Array(
         "паддок",
-        "",
+        "/paddok/",
         array(),
         array('BIG'=>true),
         ""
     ),
     Array(
         "заезды",
-        "",
+        "/rally/",
         array(),
         array('BIG'=>true),
         ""
     ),
     Array(
         "12 причин посетить",
-        "",
+        "/reasons/",
         array(),
         array(),
         ""
     ),
     Array(
         "Время работы",
-        "",
+        "/contacts/",
         array(),
         array(),
         ""
     ),
     Array(
         "Место проведения",
-        "",
+        "/contacts/",
         array(),
         array(),
         ""
     ),
     Array(
         "Билеты",
-        "",
+        "/contacts/",
         array(),
         array(),
         ""
