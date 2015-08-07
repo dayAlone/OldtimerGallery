@@ -1,18 +1,19 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Выставка");
+    $APPLICATION->IncludeComponent("bitrix:news.detail", "main", Array(
+      "IBLOCK_ID"     => 42,
+      "ELEMENT_CODE"  => 'gallery',
+      "CHECK_DATES"   => "N",
+      "IBLOCK_TYPE"   => "gallery2015",
+      "SET_TITLE"     => "Y",
+      "CACHE_TYPE"    => "A",
+      "FIELD_CODE"    => array('PREVIEW_PICTURE'),
+      "PROPERTY_CODE" => array("CLASS", 'BG', 'BUTTONS', 'WHERE')
+
+    ));
 ?>
-  <div style="background-image:url(/layout/images/vystavka-bg-inside.jpg)" class="page__block page__block--promo page__block--orange"><img src="/layout/images/person-exhibition.png" class="page__image">
-    <div class="page__content">
-      <h1 class="page__title">Выставка</h1>
-      <div class="page__divider"></div>
-      <p>Дважды в год мы собираем для Вас под сводами выставочных павильонов всё самое интересное, что есть в России на тему старинных автомобилей и антиквариата. В 24-й раз реставрационные мастерские и коллекционные бюро представят свои достижения, среди которых непременно будут громкие премьеры, сюрпризы и сенсации - стоит подготовить фотокамеры. Развалы блошиного рынка также заслуживают посещения - возможно, на этот раз именно Вам удастся найти среди множества "вещей с историей" настоящую жемчужину!</p><a href="#articles" class="button">ЭКСПОНАТЫ</a><a href="#reviews" class="button">ЗВЁЗДЫ</a>
-    </div><a href="#Map" data-toggle="modal" class="map map--gallery">
-      <div class="map__text"><span>где увидеть:<br></span>КВЦ Сокольники<br>павильон 2</div>
-      <div class="map__frame">
-        <div class="map__zoom"></div>
-      </div></a>
-  </div>
+
   <div id="articles" class="page__block page__block--brown">
     <div class="center md-left">
       <h2 class="page__title">лучшие экспонаты</h2>
