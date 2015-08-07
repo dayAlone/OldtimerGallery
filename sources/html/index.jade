@@ -1,0 +1,32 @@
+include includes/header
+<body>
+- var activeItem = -1
+include includes/sidebar
+
+.page
+	.promos
+		a.promo.promo--red(href="/rally.html", style="background-image: url(/layout/images/zaezd-bg-main.jpg)")
+			img.promo__image(src="/layout/images/person-zaezd.png")
+			.promo__content
+				h2.promo__title заезды
+				p.promo__text Легенды автоспорта – вновь на старте. Рёв их прямоточных выхлопов заставит сердца учащённо забиться. Незабываемое зрелище – чёрно-белая кинохроника оживёт на Ваших глазах.
+				br
+				.promo__divider.promo__divider--white
+					
+		a.promo.promo--blue(href="/paddok.html", style="background-image:url(/layout/images/paddock-bg-inside.jpg)")
+			img.promo__image(src="/layout/images/person-paddock.png")
+			.promo__content 
+				h2.promo__title паддок
+				p.promo__text Побывать в паддоке гоночной команды 1950-х годов. Увидеть, как прогревают, заправляют, ремонтируют и готовят к показательным заездам десятки уникальных суперкаров.
+				br
+				.promo__divider
+					
+		a.promo.promo--orange(href="/gallery.html", style="background-image: url(/layout/images/vystavka-bg-inside.jpg)")
+			img.promo__image(src="/layout/images/person-exhibition.png")
+			.promo__content 
+				h2.promo__title выставка
+				p.promo__text В 24-й раз автореставраторы представят свои достижения – громкие премьеры, сюрпризы и сенсации. Развалы «блошиного рынка» также достойны внимания любителей ретро.
+				br
+				.promo__divider
+					
+include includes/footer

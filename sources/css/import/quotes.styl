@@ -1,0 +1,98 @@
+.slick-arrow
+    border 0
+    overflow hidden
+
+    top 50%
+    size 60px
+    margin-top -30px
+    position absolute
+    border-radius 59px
+    background rgba(0,0,0, .3)
+    img
+        max-width 18px
+
+    &.slick-prev
+        left -30px
+        text-indent -5px
+    &.slick-next
+        right -30px
+        text-indent 3px
+.quotes
+    margin-top 30px
+.quote
+    padding 0 60px
+    &__name
+        text-transform uppercase
+        font-family title
+        font-size 28px
+        font-weight bold
+        line-height 1.2
+        @media (min-width: scr_lg)
+            font-size 36px
+    &__info
+        text-transform uppercase
+        font-weight 500
+        margin-top 20px
+        font-size 17px
+        @media (min-width: scr_lg)
+            font-size 18px
+    &__image
+        size 160px
+        background-size cover
+        background-color rgba(0,0,0,.1)
+        display inline-block
+        margin-bottom 25px
+        border-radius 100%
+        display none
+        @media (min-width: scr_sm)
+            display inline-block
+        @media (min-width: scr_md)
+            size 160px
+        @media (min-width: scr_lg)
+            size 220px
+    &__author
+        float right
+        text-align center
+        width 100%
+        margin-top 60px
+        @media (min-width: scr_sm)
+            padding-left 60px
+            margin-top 0px
+            width 35%
+        @media (min-width: scr_lg)
+            width 30%
+    &__frame
+        border 5px solid transparent
+        border-radius 8px
+
+        position relative
+        t border-color
+        float left
+        padding 30px 50px
+        width 100%
+        @media (min-width: scr_sm)
+            max-width 65%
+        @media (min-width: scr_lg)
+            max-width 70%
+        p
+            font-size 23px
+            line-height 1.3
+            margin-bottom 0
+            @media (min-width: scr_sm)
+                font-size 19px
+            @media (min-width: scr_lg)
+                font-size 27px
+    &__arrow
+        position absolute
+        top 100%
+        left 50%
+        transform rotate(90deg)
+        margin-top 3px
+        margin-left -20px
+        t all
+        @media (min-width: scr_sm)
+            transform none
+            top 50%
+            left 100%
+            margin-left 0px
+            margin-top -20px

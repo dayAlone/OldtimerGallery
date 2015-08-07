@@ -1,0 +1,101 @@
+include includes/header
+<body>
+- var activeItem = 4
+include includes/sidebar
+.page
+	.page__block.page__block--promo(style="background-image:url(/layout/images/bg-money.jpg)")
+		h2.page__title БУДЕМ РАДЫ ВАС ВИДЕТЬ!
+		.page__divider
+		.row.text
+			.col-lg-4.col-sm-5.col-md-4
+				h4 Билеты
+				p 
+					strong Билет в кассе – 700 рублей 
+					br
+					| Билет on-line – 500 рублей 
+					br
+					a(data-toggle="modal" data-target="#Price" href="#Price") Скидки и льготы
+					
+			.col-lg-4.col-sm-6
+				h4 Время работы
+				p 17 сентября с 10:00 до 19:00
+					br
+					| 18 сентября с 10:00 до 19:00
+					br
+					| 19 сентября с 10:00 до 19:00
+					br
+					| 20 сентября с 10:00 до 17:00
+			.col-lg-4.col-sm-6
+				h4.place Место проведения
+				p КВЦ «Сокольники», пав.2 
+					nobr и Фестивальная площадь
+					br
+					a(data-toggle="modal" data-target="#Scheme" href="#Scheme") Схема выставочного центра с парковками 
+					br
+					| Сокольники находятся недалеко от центра города – до выставки легко добраться и на 
+					a(data-toggle="modal" data-target="#Metro" href="#Metro") метро
+					|, и на 
+					a(data-toggle="modal" data-target="#Car" href="#Car") автомобиле
+					
+			.left.xxl-margin-top.col-xs-12.col-lg-offset-4
+				a.button(href="/buy.html") купить билет онлайн
+			
+.modal.fade(id="Scheme", tabindex="-1", role="dialog" aria-hidden="true", data-parsley-validate)
+	.modal-dialog.modal-lg
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+			h3.center СХЕМА ВЫСТАВОЧНОГО ЦЕНТРА С ПАРКОВКАМИ
+			.center
+				p Выставочный центр предоставляет посетителям около 2000 паковочных машиномест. <br>Стоимость въезда на территорию КВЦ "Сокольники" и парковки – 250 руб.
+				img(src="/layout/images/auto.jpg")
+
+.modal.fade(id="Metro", tabindex="-1", role="dialog" aria-hidden="true", data-parsley-validate)
+	.modal-dialog.modal-lg
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+
+			h3.center КАК ДОБРАТЬСЯ НА МЕТРО
+			.center
+				p Выставочный центр располагается на территории парка «Сокольники», <br>в 10 минутах ходьбы от станции метро «Сокольники».
+				img(src="/layout/images/metro.jpg")
+
+.modal.fade(id="Car", tabindex="-1", role="dialog" aria-hidden="true", data-parsley-validate)
+	.modal-dialog.modal-lg
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+
+			h3.center СХЕМА ВЫСТАВОЧНОГО ЦЕНТРА С ПАРКОВКАМИ
+			.center
+				p Выставочный центр предоставляет посетителям около 2000 паковочных машиномест.
+					br
+					| Стоимость въезда на территорию КВЦ "Сокольники" и парковки – 250 руб.
+				img(src="/layout/images/auto.jpg")
+	
+
+.modal.fade(id="Price", tabindex="-1", role="dialog" aria-hidden="true", data-parsley-validate)
+	.modal-dialog
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+
+			h3.center СТОИМОСТЬ БИЛЕТОВ
+			p
+				b В кассах в дни работы выставки:
+			p
+				b 700 руб 
+				|	ПОЛНЫЙ БИЛЕТ
+			p
+				b 500 руб 
+				|	ЛЬГОТНЫЙ БИЛЕТ
+				br
+				| (с подтверждающим документом) 
+				br
+				| школьники, студенты, инвалиды, пенсионеры, члены многодетных семей
+			p
+				b 2000 руб 
+				|	СЕМЕЙНЫЙ БИЛЕТ
+				br
+				| (2 взрослых + 3 детей)
+			p
+				b БЕСПЛАТНО 
+				| - дошкольники
+include includes/footer

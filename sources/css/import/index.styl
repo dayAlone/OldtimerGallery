@@ -1,0 +1,152 @@
+.promos
+	width 100%
+	min-height 100%
+
+	@media (min-width: scr_md)
+		height 100vh
+		margin-bottom -10px
+		white-space nowrap
+		min-height 700px
+		overflow hidden
+	&.promos--hover
+		@media (min-width: scr_md)
+			.promo
+				width 15%
+				&__content
+					opacity 0
+.promo
+	display inline-block
+	position relative
+	background-size 100% auto
+	background-repeat no-repeat
+	background-position top center
+	overflow hidden
+	t all
+	width 100%
+	min-height 270px
+
+	float left
+	text-align center
+	padding 20px 0
+	@media (min-width: scr_xs)
+		height calc(33.333333vh - 26.4px)
+		text-align left
+		padding 0
+	@media (min-width: scr_md)
+		background-size cover
+		float none
+		box-shadow 0 0 0 1px alpha(white, .5)
+		max-height none
+		height 100vh
+		width (100/3)%
+		min-height 700px
+
+	&--blue
+		background-color #3f609f
+		background-position 55% 0
+	&--red
+		background-color #8f1927
+		background-position 55% 0
+	&--orange
+		background-color #a86946
+		background-position top center
+		@media (min-width: scr_md)
+			background-size auto
+	&--hover
+		@media (min-width: scr_md)
+			width 70% !important
+			.promo
+				&__image
+					margin-left 0px !important
+				&__content
+					opacity 1 !important
+	&__image
+		max-width 80%
+		max-height 90%
+		display inline-block
+		text-align center
+		@media (min-width: scr_xs)
+			max-width 48%
+			text-align left
+			position absolute
+			top 50%
+			left 20px
+			transform translateY(-50%)
+		@media (min-width: scr_sm)
+			left 25%
+			transform translateY(-50%) translateX(-50%)
+		@media (min-width: scr_md)
+			max-width none
+			left 50%
+			t margin
+			transform translateX(-50%)
+			max-height 60%
+			top 5%
+			margin-left -80px
+		@media (min-width: scr_md) and (min-height: 700px)
+			top 50%
+			max-height 65%
+			margin-top -380px
+			.promo--blue &
+				margin-left -40px
+	&__content
+
+
+		padding 0 30px
+		color white
+		right 0
+		t opacity
+		text-align center
+		margin-top 20px
+		@media (min-width: scr_xs)
+			margin-top 0px
+			position absolute
+			text-align left
+			width 50%
+			bottom 50%
+			transform translateY(50%)
+		@media (min-width: scr_md)
+			height 140px
+			bottom 100px
+			width 100%
+			text-align center
+			transform none
+	&__title
+		text-transform uppercase
+		font-family title
+		font-weight bold
+		margin-bottom 15px
+		margin-top 0px
+		font-size 45px
+		position relative
+		left -3px
+		@media (max-width: scr_xs)
+			font-size 35px
+		@media (min-width: scr_sm)
+			margin-bottom 20px
+			left 0
+			font-size 40px
+		@media (min-width: scr_lg)
+			font-size 55px
+	&__text
+		font-weight 500
+		max-width 380px
+		white-space normal
+		display inline-block
+		font-size 12px
+		@media (max-width: scr_xs)
+			font-size 11px
+		@media (min-width: scr_md)
+			font-size 13px
+		@media (min-width: scr_lg)
+			font-size 14px
+
+	&__divider
+		@extend .sidebar__divider
+		display inline-block
+		margin-top 15px
+		margin-bottom 0px
+		@media (min-width: scr_sm)
+			margin-top 20px
+		&--white
+			background-color white

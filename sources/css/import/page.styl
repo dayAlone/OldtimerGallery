@@ -1,0 +1,292 @@
+.text
+	font-size 15px
+	margin-top 0px
+	@media (min-width: scr_lg)
+		margin-top 60px
+		font-size 16px
+	h4
+		font-family title
+		font-size 25px
+		font-weight bold
+		text-transform uppercase
+		margin-bottom 15px
+		margin-top 40px
+		@media (min-width: scr_md)
+			margin-top 0px
+		&.place
+			margin-top 40px
+			@media (min-width: scr_lg)
+				margin-top 0px
+	a
+		color white
+		text-decoration underline
+		&:hover
+			color red
+.page
+	width 100%
+	min-height 100%
+	t all
+	.open &
+		opacity .5
+		pointer-events none
+		transform translateX(240px)
+	@media (min-width: scr_md)
+		width calc(100% - 240px)
+		margin-left 240px
+	&__image
+		margin-bottom 30px
+		position relative
+		max-width calc(100% + 80px)
+		.page__block--orange &
+			left -40px
+			@media (min-width: scr_sm)
+				left 50%
+				max-width 65%
+				transform translateX(-90%)  translateY(-83%)
+			@media (min-width: 840px)
+				transform translateX(-88%)  translateY(-50%)
+			@media (min-width: scr_md)
+				transform translateX(-95%)  translateY(-50%)
+			@media (min-width: scr_lg)
+				transform translateX(-95%)  translateY(-50%)
+		.page__block--black &
+			left -30px
+			@media (min-width: scr_sm)
+				left 50%
+				max-width 67%
+				transform translateX(-90%)  translateY(-80%)
+			@media (min-width: 840px)
+				transform translateX(-92%)  translateY(-50%)
+			@media (min-width: scr_md)
+				transform translateX(-88%)  translateY(-50%)
+			@media (min-width: scr_lg)
+				transform translateX(-90%)  translateY(-50%)
+		.page__block--blue &
+			left -20px
+			@media (min-width: scr_sm)
+				left 50%
+				max-width 67%
+				transform translateX(-88%)  translateY(-84%)
+
+			@media (min-width: 840px)
+				transform translateX(-83%)  translateY(-50%)
+			@media (min-width: scr_md)
+				transform translateX(-80%)  translateY(-50%)
+
+		@media (min-width: scr_sm)
+			max-width 75%
+			max-height 95%
+
+			position absolute
+			top 50%
+	&__title
+		text-transform uppercase
+		font-family title
+		font-weight bold
+		margin-left -5px
+		margin-bottom 0px
+		margin-top 0px
+		line-height 1
+		font-size 37px
+		@media (min-width: scr_xs)
+			font-size 45px
+		@media (min-width: scr_md)
+			font-size 59px
+			margin-bottom 20px
+		@media (min-width: scr_lg)
+			font-size 95px
+		+ .page__divider
+			margin-top 20px
+			margin-bottom 35px
+	&__divider
+		@extend .sidebar__divider
+		display inline-block
+		.page__block--red &
+			background-color #ff2f31
+	&__block
+		width 100%
+		min-height 700px
+		background-size 100% auto
+		background-repeat repeat-x
+		background-position top center
+		padding 40px
+		overflow hidden
+		position relative
+		t background-color
+		h4
+			font-family title
+			text-transform uppercase
+			font-weight bold
+			font-size 23px
+			margin-bottom 20px
+		iframe + h4
+			margin-top 40px
+		@media (min-width: scr_sm)
+			background-size cover
+			padding 60px
+		@media (min-width: scr_md)
+			padding 80px 40px 60px
+		@media (min-height: 700px) and (min-width: scr_lg)
+			padding 120px 60px 100px
+		&--blue
+			background-color #3f609f
+		&--brown
+			background-color brown
+		&--red
+			background-color red2
+		&--black
+			background-color #8f1927
+		&--violet
+			background-color violet
+		&--orange
+			background-color #a86946
+		&--promo
+			min-height calc(100vh - 60px)
+			@media (min-width: scr_xs)
+				min-height 850px
+				height calc(100vh - 80px)
+			@media (min-width: scr_md)
+				min-height 100vh
+			.page__content
+				text-align center
+				margin-bottom 50px
+
+				@media (min-width: scr_sm)
+					position absolute
+					top 33%
+					width calc(100% - 120px)
+					transform translateY(-50%)
+				@media (min-width: 840px)
+					width 100%
+					margin-bottom 0px
+					text-align left
+					top 50%
+					max-width 500px
+					right 60px
+					t margin
+					max-width 350px
+				@media (min-width: scr_md)
+					max-width 300px
+				@media (min-width: 1230px)
+					max-width 400px
+				@media (min-width: scr_lg)
+					max-width 500px
+				p
+					margin-bottom 55px
+					font-size 14px
+					@media (min-width: scr_sm)
+						max-width 40%
+						margin-left 60%
+						text-align left
+					@media (min-width: 840px)
+						margin-bottom 35px
+						margin-left 0px
+						max-width none
+						font-size 15px
+					@media (min-width: scr_lg)
+						font-size 18px
+	.map
+		display inline-block
+		position relative
+		width 100%
+		text-align center
+		@media (min-width: scr_sm)
+			left 0
+			position absolute
+			bottom 30px
+		@media (min-width: 840px)
+
+			text-align left
+			size 130px 120px
+			left 30px
+		@media (min-width: scr_lg)
+			size 183px 168px
+		&:hover
+			.map__zoom
+				opacity 1
+		&__text
+
+			line-height 1.3
+
+			font-family title
+			text-transform uppercase
+			font-weight bold
+			min-width 200px
+			font-size 16px
+			color white
+			margin-bottom 15px
+			@media (min-width: 840px)
+				font-size 14px
+				margin-bottom 0px
+				left 100%
+				bottom 5px
+				position absolute
+				margin-left 15px
+			span
+				opacity .5
+				display inline-block
+				margin-bottom 7px
+				width 100%
+		&__zoom
+			position absolute
+			top 10px
+			right 10px
+			width 19px
+			height 19px
+			image "/layout/images/zoom.png", 19px, 19px
+			opacity .5
+
+		&__frame
+			background-repeat no-repeat
+			position relative
+			size 183px 168px
+			display inline-block
+			background-size 116px 122px !important
+			background-position 30px center
+			@media (min-width: 840px)
+				size 130px 120px
+				background-position 15px center
+				background-size 86px 92px !important
+			@media (min-width: scr_lg)
+				background-size 116px 122px !important
+				size 183px 168px
+				background-position 30px center
+		&--rally
+			.map__frame
+				image "/layout/images/map-rally.png"
+				background-color alpha(red2, .85)
+		&--paddock
+			.map__frame
+				image "/layout/images/map-paddock.png"
+				background-color alpha(blue, .5)
+		&--gallery
+			.map__frame
+				image "/layout/images/map-gallery.png"
+				background-color alpha(brown, .5)
+	.button
+		font-family title
+		display inline-block
+		padding 0 20px
+		white-space no-wrap
+		border 2px solid white
+		border-radius 5px
+		color white
+		text-transform uppercase
+		font-weight bold
+		line-height 50px
+		font-size 16px
+		height 50px
+		text-decoration none
+		@media (min-width: scr_xs)
+			font-size 18px
+		& + .button
+			margin-top 10px
+			@media (min-width: scr_xs)
+				margin-left 20px
+		@media (min-width: scr_lg)
+			line-height 60px
+			font-size 21px
+			height 59px
+		&:hover
+			background white
+			color red

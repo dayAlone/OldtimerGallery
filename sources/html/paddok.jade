@@ -1,0 +1,75 @@
+include includes/header
+<body>
+- var activeItem = 1
+include includes/sidebar
+.page
+	.page__block.page__block--promo.page__block--blue(style="background-image:url(/layout/images/paddock-bg-inside.jpg)")
+		img.page__image(src="/layout/images/person-paddock.png")
+		.page__content
+			h1.page__title паддок
+			.page__divider
+			p Фестиваль Стиля и Скорости посвящается рекордным заездам, легендарным машинам и великим гонщикам 1920-50-х годов. Особенность этого шоу в том, что уникальные спортивные автомобили не будут стоять на месте, как это обычно бывает на выставках. Посетители получат доступ в «святая святых» любой гоночной команды – в паддок, где смогут наблюдать, как машины прогревают, заправляют, ремонтируют, перемещают по площадке и готовят к показательным заездам. Фото и видеосъёмка резрешены!
+			a.button(href="#articles") ПРЕМЬЕРЫ И СЕНСАЦИИ
+		a.map.map--paddock(href="#Map", data-toggle="modal")
+			.map__text
+				span где увидеть:<br>
+				| КВЦ Сокольники<br>павильон 2
+			.map__frame
+				.map__zoom
+				
+	#articles.page__block.page__block--blue
+		.center.md-left
+			h2.page__title ПРЕМЬЕРЫ 
+				nobr И СЕНСАЦИИ
+			.page__divider
+		.articles
+			.row
+				.col-lg-3.col-sm-4
+					.article.article--first
+						.row
+							.col-xs-5.col-sm-12
+								a.article__image(href="#Modal", data-toggle="modal", style="background-image:url(/layout/images/gallery-img-1.jpg)")
+							.col-xs-7.col-sm-12
+								a.article__title(href="#Modal", data-toggle="modal") Название экспоната в две строки
+								.page__divider
+								p.article__text «Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса.
+				.col-lg-3.col-sm-4
+					.article
+						.row
+							.col-xs-5.col-sm-12
+								a.article__image(href="#Modal", data-toggle="modal", style="background-image:url(/layout/images/gallery-img-2.jpg)")
+							.col-xs-7.col-sm-12
+								a.article__title(href="#Modal", data-toggle="modal") Другое название экспоната
+								.page__divider
+								p.article__text «Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время.  
+								
+				.col-lg-3.col-sm-4
+					.article
+						.row
+							.col-xs-5.col-sm-12
+								a.article__image(href="#Modal", data-toggle="modal", style="background-image:url(/layout/images/gallery-img-3.jpg)")
+							.col-xs-7.col-sm-12
+								a.article__title(href="#Modal", data-toggle="modal") Или что-то еще тут может быть
+								.page__divider
+								p.article__text «Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса. 
+				.col-sm-12.visible-sm.visible-md
+				.col-lg-3.col-sm-4
+					.article
+						.row
+							.col-xs-5.col-sm-12
+								a.article__image(href="#Modal", data-toggle="modal", style="background-image:url(/layout/images/gallery-img-4.jpg)")
+							.col-xs-7.col-sm-12
+								a.article__title(href="#Modal", data-toggle="modal") В общем, вариантов много
+								.page__divider
+								p.article__text «Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса. 
+		.center.xxl-margin-top.xxl-padding-top
+			a.button(href="/buy.html") ЗАЙТИ В ПАДДОК
+
+.modal.fade(id="Map", tabindex="-1", role="dialog" aria-hidden="true", data-parsley-validate)
+	.modal-dialog
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+			h3.center.no-margin-bottom Зона проведения
+			.center
+				img(src="/layout/images/scheme-paddok.jpg")
+include includes/footer

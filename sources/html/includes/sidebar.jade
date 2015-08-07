@@ -1,0 +1,36 @@
+.toolbar
+	.row
+		.col-xs-3
+			a.nav-trigger(href="#")
+		.col-xs-6.center
+			.logo
+				a.logo__image(href="/")
+		.col-xs-3.right
+			.logo
+				.logo__text
+
+.sidebar
+	.sidebar__content
+		a.back(href="/") На главную
+		a.close(href="#")
+		.logo
+			a.logo__image(href="/")
+			.logo__text
+		nav.sidebar__nav.nav
+			.sidebar__divider.no-margin-top
+			- var nav = [{url:"/gallery.html", big:true, text:"выставка"}, {url:"/paddok.html", big:true, text:"паддок"}, {url:"/rally.html", big:true, text:"заезды"}, {url:"/reasons.html", big:false, text:"12 причин посетить"}, {url:"/contacts.html", big:false, text:"Время работы"}, {url:"/contacts.html", big:false, text:"Место проведения"}, {url:"/contacts.html", big:false, text:"Билеты"}]
+			each el, key in nav
+				- var c = el.big ? "nav__item--big" : ""
+				- if (activeItem == key) c += " nav__item--active"
+				if key == 3
+					.nav__divider
+				
+				a(href="#{el.url}", class="nav__item #{c}")= el.text
+				br
+			.sidebar__divider.no-margin-bottom
+		footer.sidebar__footer
+			a.buy(href="/buy.html") купить билет
+			.sidebar__social
+				- var social = {'lj':"http://oldtimer-ru.livejournal.com", 'fb':"https://www.facebook.com/oldtimer.ru", 'tw':"https://twitter.com/ru_oldtimer", 'vk':"https://vk.com/club50218982", 'ok':"http://ok.ru/group52509993730118", 'yt':"https://www.youtube.com/channel/UCnzr5MbXxV9zrt7_lZJaeMg"}
+				each i, key in social
+					a(href="#{i}", target="_blank",class="social social--#{key}")

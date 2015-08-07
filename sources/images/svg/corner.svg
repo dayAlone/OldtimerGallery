@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="55px" height="42px" viewBox="0 0 55 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>corner</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="corner" sketch:type="MSLayerGroup">
+            <path d="M5.5,42 C5.5,40.8892124 6.55424429,38.7477931 7.68816745,37.8756442 L48.5236576,6.48403622 L54.354074,2.002 L47,2.002 L7.002,2.002 C6.1713855,2.002 5.5,1.33096212 5.5,0 L0,0 L0,42 L5.5,42 Z" id="bg" fill="" sketch:type="MSShapeGroup"></path>
+            <path d="M5.5,42 C5.5,40.8892124 6.55424429,38.7477931 7.68816745,37.8756442 L48.5236576,6.48403622 L54.354074,2.002 L47,2.002 L7.002,2.002 C6.1713855,2.002 5.5,1.33096212 5.5,0 L0.5,0 C0.5,4.09296573 3.41054128,7.002 7.002,7.002 L39.5,7.00199986 L4.64034242,33.9119638 C2.27520712,35.7310906 0.5,39.3369558 0.5,42 L5.5,42 Z" id="arrow" fill="" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

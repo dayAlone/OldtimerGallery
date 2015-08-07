@@ -1,0 +1,35 @@
+include includes/header
+<body>
+- var activeItem = 3
+include includes/sidebar
+
+.page
+	#articles.page__block.page__block--violet
+		.xs-center.md-left
+			h2.page__title 12 причин посетить
+			.page__divider
+		.articles
+			.row
+				- var articles = ["Афиши великих гонок", "Гонки по-вертикали", "За рулём – живые легенды", "Стремительные мгновения", "Селфи в стиле «ретро»", "Погоня за скоростью", "Что такое automobilia?", "Блистательная изнанка", "Готовность номер один", "Игроведы и игроманы", "Попробуй классику на вкус", "Осень в старинном парке"]
+				each a, k in articles
+					- var key = k+1
+					- var cs = k == 0 ? "article--first" : ""
+					.col-lg-3.col-sm-4
+						.article(class="#{cs}")
+							.row
+								.col-xs-5.col-sm-12
+									a.article__image(href="#Modal", data-toggle="modal", style="background-image:url(/layout/images/reasons-img-#{key}.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/layout/images/reasons-img-#{key}.jpg', sizingMethod='scale');-ms-filter: \"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/layout/images/reasons-img-#{key}.jpg', sizingMethod='scale')\";")
+								.col-xs-7.col-sm-12
+									a.article__title(href="#Modal", data-toggle="modal")= a
+									.page__divider
+									p.article__text «Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса.
+					//if key % 2 == 0
+					//	.col-sm-12.visible-sm
+					if key % 3 == 0
+						.col-sm-12.visible-md.visible-sm
+				
+		.center.xxl-margin-top.xxl-padding-top
+			a.button(href="/buy.html") купить билет онлайн
+
+
+include includes/footer

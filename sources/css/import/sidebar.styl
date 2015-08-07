@@ -1,0 +1,210 @@
+.sidebar, .toolbar
+	background-color blue
+	position fixed
+	t all
+	left 0
+	top 0
+	z-index 20
+	height 100%
+	width 240px
+	padding 0 23px
+	overflow auto
+	-webkit-overflow-scrolling: touch;
+	transform translateX(-240px)
+	pointer-events none
+	@media (min-width: scr_md)
+		overflow hidden
+	@media (min-width: scr_md)
+		transform none
+		pointer-events all
+	&__content
+		height 100%
+		padding 25px 0
+		position relative
+		min-height 500px
+		@media (max-height: 700px) and (min-width: scr_md)
+			min-height 750px
+	&__divider
+		size 56px 4px
+		background-color red
+		margin 20px 0
+		@media (min-height: 730px)
+			margin 40px 0
+	&__social
+		text-align center
+		margin-top 25px
+		line-height 20px
+	&__footer
+		position absolute
+		bottom 25px
+		left 0
+		width 100%
+	.back
+		color gray
+		font-size 13px
+		&:hover
+			color white
+	.buy
+		width 100%
+		color red
+		border 1px solid red
+		display inline-block
+		width 100%
+		text-transform uppercase
+		text-align center
+		font-size 18px
+		padding 10px 0 2px
+		min-height 42px
+		letter-spacing 2px
+		font-weight 400
+		border-radius 1px
+		box-shadow inset 0 0 0 0px red
+		&:hover
+			background-color red
+			color blue
+	.logo
+		display none
+		@media (min-width: scr_md)
+			display block
+		&__image
+			image "/layout/images/logo.png"
+			width 100%
+			size 195px 51px
+			margin 30px 0
+			display inline-block
+		&__text
+			image "/layout/images/rally-logo.png"
+			size 100% 80px
+		&__text, &__image
+			background-repeat no-repeat
+			background-position center center
+			background-size contain
+	.nav
+		position absolute
+		top 70px
+		left 0px
+		@media (min-width: scr_md)
+			margin-top -80px
+			top 50%
+		@media (min-height: 730px) and (min-width: scr_md)
+			margin-top -100px
+		&__divider
+			height 20px
+			width 100%
+		&__item
+			color gray
+			font-size 15px
+			display inline-block
+			line-height 1.7
+			t all
+			&--big
+				color white
+				text-transform uppercase
+				font-family title
+				font-size 30px
+				font-weight 100
+				line-height 1.4
+				&:laft-of-type
+					margin-bottom 30px
+			&.hover, &:hover, &--active, &--active:hover
+				color red
+
+	.nav-trigger
+		width 27px
+		height 22px
+		display inline-block
+		image "/layout/images/nav.png" top center
+		background-size cover
+		transition-property none
+		&:hover
+			background-position bottom center
+		.open &
+			background-position top center
+	.social
+		width 20px
+		height 20px
+		display inline-block
+		margin 0 8px
+		vertical-align middle
+		opacity .5
+		&:hover
+			opacity 1
+
+		w = 16px 9px 19px 13px 11px 25px
+		h = 19px 17px 15px 15px 18px 17px
+		social = lj fb tw vk ok yt
+		for name, key in social
+			&--{name}
+				size: w[key] h[key]
+				image: "/layout/images/"+name+".png", w[key], h[key]
+				background-size: w[key] h[key]
+
+.sidebar
+	.close
+		position absolute
+		top 19px
+		right 0px
+		size 27px
+		background-size cover
+		transition-property none
+		image "/layout/images/side-close.png", 27px, 54px
+		&:hover
+			background-position bottom left
+		@media (min-width: scr_md)
+			display none
+	.open &
+		transform none
+		pointer-events all
+
+.toolbar
+	z-index 20
+	transform none
+	height 80px
+	width 100%
+	line-height 80px
+	padding 0 25px
+	z-index 100
+	overflow hidden
+	pointer-events all !important
+	*
+		t opacity
+	.open &
+		transform translateX(240px)
+		*
+			opacity .5
+	@media (max-width: 568px)
+		height 60px
+		line-height 60px
+		padding 0 20px
+	.nav-trigger
+		vertical-align middle
+		display inline-block
+		@media (max-width: 568px)
+			width 25px
+			height 20px
+			background-size 100% auto
+	.logo
+		display block
+		&__text
+			height 50px
+			margin-bottom 0px
+			display inline-block
+			vertical-align middle
+			width 100%
+			background-position center right
+			@media (max-width: 568px)
+				height 40px
+
+		&__image
+			margin-top 0px
+			display inline-block
+			vertical-align middle
+			min-height 60px
+			margin-bottom 0px
+			width 100%
+			min-width 0
+			@media (max-width: 568px)
+				min-height 40px
+				height 40px
+	@media (min-width: scr_md)
+		transform translateY(-80px)

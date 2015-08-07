@@ -1,0 +1,33 @@
+include includes/header
+<body>
+- var activeItem = 2
+include includes/sidebar
+.page
+	.page__block.page__block--promo.page__block--black(style="background-image:url(/layout/images/zaezd-bg-inside.jpg)")
+		img.page__image(src="/layout/images/person-zaezd.png")
+		.page__content
+			h1.page__title Заезды
+			.page__divider
+			p Эпоха, когда пространство и время покорялись людской воле! Эпоха скорости! Эпоха рекордов! Гоночные суперкары тех великих лет считались утраченными навсегда. Энтузиасты отыскали их, восстановили специально к Фестивалю, доставили в Москву из других городов и стран для участия в уникальных звёздных заездах. Они - стиль и сталь легендарной эпохи. Рёв их прямоточных выхлопов заставит сердца учащённо забиться. Это будет незабываемое зрелище - чёрно-белая кинохроника оживёт на Ваших глазах.
+			a.button(href="#articles") программа
+		a.map.map--rally(href="#Map", data-toggle="modal")
+			.map__text
+				span где увидеть:<br>
+				| КВЦ Сокольники<br>павильон 2
+			.map__frame
+				.map__zoom(href="#Map", data-toggle="modal")
+				
+	#articles.page__block.page__block--red
+		.center.md-left
+			h2.page__title расписание зaeздов
+			.page__divider
+		.center.xxl-margin-top.xxl-padding-top
+			a.button(href="/buy.html") насладиться зрелищем
+.modal.fade(id="Map", tabindex="-1", role="dialog" aria-hidden="true", data-parsley-validate)
+	.modal-dialog
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+			h3.center.no-margin-bottom Зона проведения
+			.center
+				img(src="/layout/images/scheme-rally.jpg")
+include includes/footer

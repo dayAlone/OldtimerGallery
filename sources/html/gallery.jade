@@ -1,0 +1,103 @@
+include includes/header
+<body>
+- var activeItem = 0
+include includes/sidebar
+.page
+	.page__block.page__block--promo.page__block--orange(style="background-image:url(/layout/images/vystavka-bg-inside.jpg)")
+		img.page__image(src="/layout/images/person-exhibition.png")
+		.page__content
+			h1.page__title Выставка
+			.page__divider
+			p Дважды в год мы собираем для Вас под сводами выставочных павильонов всё самое интересное, что есть в России на тему старинных автомобилей и антиквариата. В 24-й раз реставрационные мастерские и коллекционные бюро представят свои достижения, среди которых непременно будут громкие премьеры, сюрпризы и сенсации - стоит подготовить фотокамеры. Развалы блошиного рынка также заслуживают посещения - возможно, на этот раз именно Вам удастся найти среди множества "вещей с историей" настоящую жемчужину!
+			a.button(href="#articles") ЭКСПОНАТЫ
+			a.button(href="#reviews") ЗВЁЗДЫ
+		a.map.map--gallery(href="#Map", data-toggle="modal")
+			.map__text
+				span где увидеть:<br>
+				| КВЦ Сокольники<br>павильон 2
+			.map__frame
+				.map__zoom
+				
+	#articles.page__block.page__block--brown
+		.center.md-left
+			h2.page__title лучшие экспонаты
+			.page__divider
+		.articles
+			.row
+				.col-lg-3.col-sm-4
+					.article.article--first
+						.row
+							.col-xs-5.col-sm-12
+								a.article__image(href="#Modal", data-toggle="modal", style="background-image:url(/layout/images/gallery-img-1.jpg)")
+							.col-xs-7.col-sm-12
+								a.article__title(href="#Modal", data-toggle="modal") Название экспоната в две строки
+								.page__divider
+								p.article__text «Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса.
+				.col-lg-3.col-sm-4
+					.article
+						.row
+							.col-xs-5.col-sm-12
+								a.article__image(href="#Modal", data-toggle="modal", style="background-image:url(/layout/images/gallery-img-2.jpg)")
+							.col-xs-7.col-sm-12
+								a.article__title(href="#Modal", data-toggle="modal") Другое название экспоната
+								.page__divider
+								p.article__text «Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время.  
+								
+				.col-lg-3.col-sm-4
+					.article
+						.row
+							.col-xs-5.col-sm-12
+								a.article__image(href="#Modal", data-toggle="modal", style="background-image:url(/layout/images/gallery-img-3.jpg)")
+							.col-xs-7.col-sm-12
+								a.article__title(href="#Modal", data-toggle="modal") Или что-то еще тут может быть
+								.page__divider
+								p.article__text «Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса. 
+				.col-sm-12.visible-sm.visible-md
+				.col-lg-3.col-sm-4
+					.article
+						.row
+							.col-xs-5.col-sm-12
+								a.article__image(href="#Modal", data-toggle="modal", style="background-image:url(/layout/images/gallery-img-4.jpg)")
+							.col-xs-7.col-sm-12
+								a.article__title(href="#Modal", data-toggle="modal") В общем, вариантов много
+								.page__divider
+								p.article__text «Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса. 
+
+		.center.xxl-margin-top.xxl-padding-top
+			a.button(href="/buy.html") посетить выставку
+	#reviews.page__block.page__block--orange
+		.center.md-left
+			h2.page__title отзывы
+			.page__divider
+		.quotes
+			.quote(data-bg="#d27700", data-border="#ffc000")
+				.quote__frame
+					.quote__arrow
+						include ../../public_html/layout/images/svg/corner.svg
+					p «Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса. Это как старинное вино — надо его уметь отличать, чувствовать и наслаждаться»
+				.quote__author
+					.quote__image(style="background-url(/layout/images/pic.jpg)")
+					.quote__name Леонид Ярмольник
+					.quote__info актер
+					
+			.quote(data-bg="#d9916b", data-border="#a6001a")
+				.quote__frame
+					.quote__arrow
+						include ../../public_html/layout/images/svg/corner.svg
+					p «Посетив Олдтаймер-Галерею, я понял, что автомобили середины двадцатого века — самые любопытные с точки зрения человеческого таланта изобретать, совершенствовать и удивлять. Есть такие образцы, в которых остановилось и отразилось время, как свидетельство человеческого гения и вкуса. Это как старинное вино — надо его уметь отличать, чувствовать и наслаждаться»
+				.quote__author
+					.quote__image(style="background-url(/layout/images/pic.jpg)")
+					.quote__name Леонид Ярмольник
+					.quote__info актер
+		.center.xxl-margin-top.xxl-padding-top
+			a.button(href="/buy.html") увидеть своими глазами
+
+.modal.fade(id="Map", tabindex="-1", role="dialog" aria-hidden="true", data-parsley-validate)
+	.modal-dialog
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+			h3.center.no-margin-bottom Зона проведения
+			.center
+				img(src="/layout/images/scheme-gallery.jpg")
+
+include includes/footer

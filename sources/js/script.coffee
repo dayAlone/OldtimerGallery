@@ -1,0 +1,125 @@
+delay = (ms, func) -> setTimeout func, ms
+
+end = 'transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd'
+
+calculateLayout = ->
+
+	$('body').removeClass 'open'
+
+	$blockPromo = $('.page').elem('block').byMod('promo')
+	heightPromo = $(window).height() - parseInt($blockPromo.css('padding-top')) - parseInt($blockPromo.css('padding-bottom'))
+	if $blockPromo.height < heightPromo
+		$blockPromo.height heightPromo
+
+	if !Modernizr.csscalc
+		$('.page').width $('body').width() - 240
+
+	if !Modernizr.csstransforms
+		$pageContent = $('.page').elem('block').byMod('promo').find('.page__content')
+		$pageContent.css
+			'margin-top': -$pageContent.height()/2
+			'min-height', $(window).height() - parseInt($pageContent.css('padding-top')) - parseInt($pageContent.css('padding-bottom'))
+
+		$('.toolbar').hide()
+		$('.promo').find('img').each ->
+			$(this).css
+				'margin-left' : - $(this).width()/2 - 60
+
+	if $(window).width() >= 1024
+		$('.promos, .promo').height $(window).height()
+	else
+		$('.promos').removeAttr 'style'
+		$('.promo').each ->
+			image = $(this).css 'background-image'
+			$(this)
+				.removeAttr 'style'
+				.css 'background-image', image
+
+
+
+	$blockScroll = $('.sidebar')
+	if $(window).width() >= 980
+		if $blockScroll.data('perfect-scrollbar')
+			$blockScroll.perfectScrollbar 'update'
+		else
+			$blockScroll.perfectScrollbar({suppressScrollX: true, includePadding: true})
+	else
+		$blockScroll.perfectScrollbar 'destroy'
+
+$('.sidebar .close').click (e)->
+	$('body').toggleClass 'open'
+
+setBG = ($el)->
+	$('#reviews').css 'background-color', $el.data 'bg'
+	$('.quote__frame').css 'border-color', $el.data 'border'
+	$('.quote__arrow').find('path#bg').attr 'fill', $el.data 'bg'
+	$('.quote__arrow').find('path#arrow').attr 'fill', $el.data 'border'
+
+$('.quotes')
+	.on('init', (e)->
+		setBG $(e.target).find('.slick-current')
+	)
+	.on('afterChange', (e)->
+		console.log e.target
+		setBG $(e.target).find('.slick-current')
+	).slick
+		infinite: true
+		adaptiveHeight: true
+		slidesToShow: 1
+		slidesToScroll: 1
+		prevArrow: '<button type="button" class="slick-prev"><img src="/layout/images/left.png"></button>'
+		nextArrow: '<button type="button" class="slick-next"><img src="/layout/images/right.png"></button>'
+
+
+$('.nav-trigger').click (e)->
+	$('body').toggleClass 'open'
+	delay 300, ->
+		if $('body').hasClass 'open'
+			$(document).one 'click tap touchstart touchmove', (e)->
+				if $('body').hasClass('open') && $(e.target).parents('.sidebar').length == 0
+					$('body').removeClass 'open'
+					e.preventDefault()
+
+	e.preventDefault()
+
+$(window).on 'resize', _.debounce(calculateLayout, 300)
+$(window).on 'mousewheel', (e)->
+	if $('body').hasClass('open') && $(e.target).parents('.sidebar').length == 0
+		e.preventDefault()
+		e.stopPropagation()
+		return false
+
+$('iframe').on 'ready', _.debounce(calculateLayout, 300)
+
+$('a')
+	.on( 'mouseover', ->
+		href = $(this).attr('href')
+		if !$(this).hasClass 'promo'
+			$(this).parent().find("a[href='#{href}']").addClass "hover"
+	)
+	.on( 'mouseleave', ->
+		href = $(this).attr('href')
+		$(this).parent().find("a[href^='#{href}']").removeClass "hover"
+	)
+
+$('a.button').click (e)->
+	$el = $($(this).attr('href'))
+	if $el.length > 0
+		top = $el.offset().top
+		if $(window).width() < 1024
+			top -= $('.toolbar').height()
+		$("html, body").animate { scrollTop: top }, 300
+		e.preventDefault()
+
+$('.promo').hoverIntent
+	sensitivity: 1
+	interval: 10
+	over:->
+		$(this).parents('.promos').mod 'hover', true
+		$(this).mod 'hover', true
+	out:->
+		$(this).mod 'hover', false
+		$(this).parents('.promos').mod 'hover', false
+
+delay 300, ->
+  calculateLayout()
