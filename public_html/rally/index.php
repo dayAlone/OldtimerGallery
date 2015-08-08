@@ -13,7 +13,7 @@ $APPLICATION->SetTitle("Заезды");
 
     ));
 ?>
-  <div id="articles" class="page__block page__block--red">
+  <div id="articles" class="page__block page__block--red2">
     <div class="center md-left">
       <h2 class="page__title">расписание зaeздов</h2>
       <div class="page__divider"></div>

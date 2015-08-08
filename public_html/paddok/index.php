@@ -13,7 +13,7 @@ $APPLICATION->SetTitle("Паддок");
 
     ));
 ?>
-  <div id="articles" class="page__block page__block--blue">
+  <div id="articles" class="page__block page__block--blue2">
     <div class="center md-left">
       <h2 class="page__title">ПРЕМЬЕРЫ
         <nobr>И СЕНСАЦИИ</nobr>

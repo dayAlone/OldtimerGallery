@@ -4991,14 +4991,17 @@ svg g {
 .page__block--blue {
   background-color: #3f609f;
 }
+.page__block--blue2 {
+  background-color: #1a2e63;
+}
 .page__block--brown {
   background-color: #813f2d;
 }
 .page__block--red {
   background-color: #8f1927;
 }
-.page__block--black {
-  background-color: #8f1927;
+.page__block--red2 {
+  background-color: #61031d;
 }
 .page__block--violet {
   background-color: #3c1d47;
