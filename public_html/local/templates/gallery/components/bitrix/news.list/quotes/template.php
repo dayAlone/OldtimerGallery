@@ -7,7 +7,7 @@
               <p><?=$item['PREVIEW_TEXT']?></p>
             </div>
             <div class="quote__author">
-              <div style="background-url(<?=$item['PREVIEW_PICTURE']['SRC']?>)" class="quote__image"></div>
+              <div style="background-image: url(<?=$item['PREVIEW_PICTURE']['SRC']?>)" class="quote__image"></div>
               <div class="quote__name"><?=$item['NAME']?></div>
               <div class="quote__info"><?=$item['PROPERTIES']['ABOUT']['VALUE']?></div>
             </div>
