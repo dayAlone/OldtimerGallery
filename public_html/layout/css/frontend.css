@@ -5314,6 +5314,12 @@ svg g {
 .quote {
   padding: 0 60px;
 }
+.quote,
+.quote:focus,
+.quote:active {
+  outline: 0;
+  border: 0;
+}
 .quote__name {
   text-transform: uppercase;
   font-family: 'FuturaOld', 'HelveticaNeue', 'Helvetica Neue', 'Arial', sans-serif;
