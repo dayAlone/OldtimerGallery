@@ -20,7 +20,7 @@ $APPLICATION->SetTitle("Будем рады вас видеть!");
           <nobr>и Фестивальная площадь</nobr><br><a data-toggle="modal" data-target="#Scheme" href="#Scheme">Схема выставочного центра с парковками </a><br>Сокольники находятся недалеко от центра города – до выставки легко добраться и на <a data-toggle="modal" data-target="#Metro" href="#Metro">метро</a>, и на <a data-toggle="modal" data-target="#Car" href="#Car">автомобиле</a>
         </p>
       </div>
-      <div class="left xxl-margin-top col-xs-12 col-lg-offset-4"><a href="/buy.html" class="button">купить билет онлайн</a></div>
+      <div class="left xxl-margin-top col-xs-12 col-lg-offset-4"><a href="/buy/" class="button">купить билет онлайн</a></div>
     </div>
   </div>
 </div>

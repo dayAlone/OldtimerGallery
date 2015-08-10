@@ -18,6 +18,11 @@
     if (!Modernizr.csscalc) {
       $('.page').width($('body').width() - 240);
     }
+    $('.article').elem('image').css({
+      height: function() {
+        return $(this).width() * 0.87837837837;
+      }
+    });
     if (!Modernizr.csstransforms) {
       $pageContent = $('.page').elem('block').byMod('promo').find('.page__content');
       $pageContent.css({
