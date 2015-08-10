@@ -5608,7 +5608,8 @@ svg g {
   max-width: 100%;
   margin-top: 15px;
 }
-.modal-content h3 {
+.modal-content h3,
+.modal-content .text .title {
   margin: 0 auto;
   padding-bottom: 15px;
   margin-bottom: 20px;
@@ -5619,12 +5620,23 @@ svg g {
   font-weight: bold;
 }
 @media (min-width: 505px) {
-  .modal-content h3 {
+  .modal-content h3,
+  .modal-content .text .title {
     font-size: 40px;
   }
 }
 .modal-content .text {
   min-height: 200px;
+}
+.modal-content .text .title {
+  font-size: 27px;
+}
+.modal-content .text img {
+  margin: 0;
+  max-width: 100%;
+  max-height: none;
+  width: 100%;
+  height: auto !important;
 }
 .modal-content a {
   color: #ab0615;
