@@ -2582,8 +2582,10 @@ svg g {
   }
 }
 .authors {
-  width: 100%;
+  margin-right: -8px;
+  margin-left: -8px;
   text-align: center;
+  padding-top: 40px;
 }
 .authors .author {
   display: inline-block;
@@ -2591,6 +2593,7 @@ svg g {
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
+  padding: 0 8px;
 }
 .authors .author:hover,
 .authors .author--active {
