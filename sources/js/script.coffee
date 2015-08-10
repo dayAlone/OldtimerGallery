@@ -76,7 +76,7 @@ setBG = ($el)->
 
 $(document).ready ->
 	$('#Modal').on('show.bs.modal', (e)->
-		url = $(e.target).data 'url'
+		url = $(e.relatedTarget).data 'url'
 		$.get url, (data)->
 			$(this).find('.text')
 				.html $(data).find('.main .articles .item').html()

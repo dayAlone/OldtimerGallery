@@ -89,7 +89,7 @@
   $(document).ready(function() {
     $('#Modal').on('show.bs.modal', function(e) {
       var url;
-      url = $(e.target).data('url');
+      url = $(e.relatedTarget).data('url');
       return $.get(url, function(data) {
         return $(this).find('.text').html($(data).find('.main .articles .item').html()).find('span.date').remove();
       });

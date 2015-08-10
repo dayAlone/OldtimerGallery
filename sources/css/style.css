@@ -2643,22 +2643,7 @@ svg g {
   display: inline-block;
   margin-bottom: 25px;
   border-color: #0096d1;
-  min-height: 120px;
-}
-@media (max-width: 370px) {
-  .articles .article__image {
-    min-height: 170px;
-  }
-}
-@media (min-width: 768px) {
-  .articles .article__image {
-    min-height: 170px;
-  }
-}
-@media (min-width: 1420px) {
-  .articles .article__image {
-    min-height: 240px;
-  }
+  min-height: 170px;
 }
 .articles .article__image:hover,
 .articles .article__image.hover {
@@ -2748,6 +2733,9 @@ svg g {
   .modal-content h3 {
     font-size: 40px;
   }
+}
+.modal-content .text {
+  min-height: 200px;
 }
 .modal-content a {
   color: #ab0615;
