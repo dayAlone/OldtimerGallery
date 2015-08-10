@@ -16,7 +16,7 @@ calculateLayout = ->
 
 	$('.article').elem('image').css
 		height: ->
-			$(this).width() * 0.87837837837
+			$(this).width() * 0.80677966101
 
 	if !Modernizr.csstransforms
 		$pageContent = $('.page').elem('block').byMod('promo').find('.page__content')

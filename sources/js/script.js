@@ -20,7 +20,7 @@
     }
     $('.article').elem('image').css({
       height: function() {
-        return $(this).width() * 0.87837837837;
+        return $(this).width() * 0.80677966101;
       }
     });
     if (!Modernizr.csstransforms) {
