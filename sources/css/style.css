@@ -2738,9 +2738,11 @@ svg g {
 }
 .modal-content .text {
   min-height: 200px;
+  margin-top: 0px;
 }
 .modal-content .text .title {
-  font-size: 27px;
+  width: 100%;
+  text-align: center;
 }
 .modal-content .text img {
   margin: 0;
