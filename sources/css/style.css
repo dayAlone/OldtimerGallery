@@ -2619,7 +2619,7 @@ svg g {
   display: inline-block;
   margin-bottom: 25px;
   border-color: #0096d1;
-  min-height: 220px;
+  min-height: 120px;
 }
 @media (max-width: 370px) {
   .articles .article__image {
