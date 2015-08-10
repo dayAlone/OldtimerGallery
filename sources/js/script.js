@@ -72,9 +72,9 @@
       return $('body').toggleClass('open');
     });
     $('.author').click(function(e) {
-      $(this).mod('active', true);
       $(".author").removeClass('author--active');
       $(this).addClass('author--active');
+      $('.quotes').slick('slickGoTo', $(this).index());
       return e.preventDefault();
     });
     $('.quotes').on('init', function(e) {

@@ -61,9 +61,9 @@ $(document).ready ->
 		$('body').toggleClass 'open'
 
 	$('.author').click (e)->
-		$(this).mod 'active', true
 		$(".author").removeClass 'author--active'
 		$(this).addClass 'author--active'
+		$('.quotes').slick 'slickGoTo', $(this).index()
 		e.preventDefault()
 	$('.quotes')
 		.on('init', (e)->
