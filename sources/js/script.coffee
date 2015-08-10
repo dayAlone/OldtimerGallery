@@ -61,21 +61,21 @@ $(document).ready ->
 		$('body').toggleClass 'open'
 
 	$('.author').click (e)->
-		$(".author").mod 'active', false
 		$(this).mod 'active', true
-		$('.quotes').slick 'slickGoTo', $(this).index()
+		$(".author").removeClass 'author--active'
+		$(this).addClass 'author--active'
 		e.preventDefault()
 	$('.quotes')
 		.on('init', (e)->
 			id = $(e.target).find('.slick-current').data('id')
-			$(".author").mod 'active', false
-			$(".author[data-id='#{id}']").mod 'active', true
+			$(".author").removeClass 'author--active'
+			$(".author[data-id='#{id}']").addClass 'author--active'
 			setBG $(e.target).find('.slick-current')
 		)
 		.on('afterChange', (e)->
 			id = $(e.target).find('.slick-current').data('id')
-			$(".author").mod 'active', false
-			$(".author[data-id='#{id}']").mod 'active', true
+			$(".author").removeClass 'author--active'
+			$(".author[data-id='#{id}']").addClass 'author--active'
 			setBG $(e.target).find('.slick-current')
 		).slick
 			infinite: true

@@ -72,22 +72,22 @@
       return $('body').toggleClass('open');
     });
     $('.author').click(function(e) {
-      $(".author").mod('active', false);
       $(this).mod('active', true);
-      $('.quotes').slick('slickGoTo', $(this).index());
+      $(".author").removeClass('author--active');
+      $(this).addClass('author--active');
       return e.preventDefault();
     });
     $('.quotes').on('init', function(e) {
       var id;
       id = $(e.target).find('.slick-current').data('id');
-      $(".author").mod('active', false);
-      $(".author[data-id='" + id + "']").mod('active', true);
+      $(".author").removeClass('author--active');
+      $(".author[data-id='" + id + "']").addClass('author--active');
       return setBG($(e.target).find('.slick-current'));
     }).on('afterChange', function(e) {
       var id;
       id = $(e.target).find('.slick-current').data('id');
-      $(".author").mod('active', false);
-      $(".author[data-id='" + id + "']").mod('active', true);
+      $(".author").removeClass('author--active');
+      $(".author[data-id='" + id + "']").addClass('author--active');
       return setBG($(e.target).find('.slick-current'));
     }).slick({
       infinite: true,
