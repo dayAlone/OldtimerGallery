@@ -78,6 +78,7 @@ $(document).ready ->
 	$('#Modal').on('show.bs.modal', (e)->
 		url = $(e.relatedTarget).data 'url'
 		$.get url, (data)->
+			console.log $(data).find('.main .articles'), $(this).find('.text')
 			$(this).find('.text')
 				.html $(data).find('.main .articles .item').html()
 				.find('span.date').remove()
