@@ -5470,6 +5470,21 @@ svg g {
     margin-top: -20px;
   }
 }
+.authors {
+  width: 100%;
+  text-align: center;
+}
+.authors .author {
+  display: inline-block;
+  text-align: left;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.authors .author:hover,
+.authors .author--active {
+  color: #000;
+}
 @media (min-width: 1420px) {
   .articles {
     margin-top: 30px;
