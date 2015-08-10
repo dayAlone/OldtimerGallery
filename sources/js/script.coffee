@@ -78,10 +78,9 @@ $(document).ready ->
 	$('#Modal').on('show.bs.modal', (e)->
 		url = $(e.relatedTarget).data 'url'
 		$.get url, (data)->
-			console.log $(data).find('.main .articles'), $(this).find('.text')
-			$(this).find('.text')
+			$('#Modal .text')
 				.html $(data).find('.main .articles .item').html()
-				.find('span.date').remove()
+				.find('span.date, div.meta').remove()
 	).find('.text').spin spinOptions
 	$('.sidebar .close').click (e)->
 		$('body').toggleClass 'open'

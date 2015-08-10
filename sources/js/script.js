@@ -91,8 +91,7 @@
       var url;
       url = $(e.relatedTarget).data('url');
       return $.get(url, function(data) {
-        console.log($(data).find('.main .articles'), $(this).find('.text'));
-        return $(this).find('.text').html($(data).find('.main .articles .item').html()).find('span.date').remove();
+        return $('#Modal .text').html($(data).find('.main .articles .item').html()).find('span.date, div.meta').remove();
       });
     }).find('.text').spin(spinOptions);
     $('.sidebar .close').click(function(e) {
