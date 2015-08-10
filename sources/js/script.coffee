@@ -75,7 +75,13 @@ setBG = ($el)->
 	$('.quote__arrow').find('path#arrow').attr 'fill', $el.data 'border'
 
 $(document).ready ->
-	$('#Modal .text').spin spinOptions
+	$('#Modal').on('show.bs.modal', (e)->
+		url = $(e.target).data 'url'
+		$.get url, (data)->
+			$(this).find('.text')
+				.html $(data).find('.main .articles .item').html()
+				.find('span.date').remove()
+	).find('.text').spin spinOptions
 	$('.sidebar .close').click (e)->
 		$('body').toggleClass 'open'
 
