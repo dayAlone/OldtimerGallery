@@ -63,7 +63,7 @@ $(document).ready ->
 	$('.author').click (e)->
 		$(".author").mod 'active', false
 		$(this).mod 'active', true
-		console.log $('.quotes').data('slick')
+		$('.quotes').slick 'slickGoTo', $(this).index()
 		e.preventDefault()
 	$('.quotes')
 		.on('init', (e)->
@@ -108,12 +108,14 @@ $(document).ready ->
 	$('a')
 		.on( 'mouseover', ->
 			href = $(this).attr('href')
-			if !$(this).hasClass 'promo'
-				$(this).parent().find("a[href='#{href}']").addClass "hover"
+			if href != "#"
+				if !$(this).hasClass 'promo'
+					$(this).parent().find("a[href='#{href}']").addClass "hover"
 		)
 		.on( 'mouseleave', ->
 			href = $(this).attr('href')
-			$(this).parent().find("a[href^='#{href}']").removeClass "hover"
+			if href != "#"
+				$(this).parent().find("a[href^='#{href}']").removeClass "hover"
 		)
 
 	$('a.button').click (e)->

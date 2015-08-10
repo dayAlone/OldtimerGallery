@@ -74,7 +74,7 @@
     $('.author').click(function(e) {
       $(".author").mod('active', false);
       $(this).mod('active', true);
-      console.log($('.quotes').data('slick'));
+      $('.quotes').slick('slickGoTo', $(this).index());
       return e.preventDefault();
     });
     $('.quotes').on('init', function(e) {
@@ -123,13 +123,17 @@
     $('a').on('mouseover', function() {
       var href;
       href = $(this).attr('href');
-      if (!$(this).hasClass('promo')) {
-        return $(this).parent().find("a[href='" + href + "']").addClass("hover");
+      if (href !== "#") {
+        if (!$(this).hasClass('promo')) {
+          return $(this).parent().find("a[href='" + href + "']").addClass("hover");
+        }
       }
     }).on('mouseleave', function() {
       var href;
       href = $(this).attr('href');
-      return $(this).parent().find("a[href^='" + href + "']").removeClass("hover");
+      if (href !== "#") {
+        return $(this).parent().find("a[href^='" + href + "']").removeClass("hover");
+      }
     });
     $('a.button').click(function(e) {
       var $el, top;
