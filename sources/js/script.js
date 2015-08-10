@@ -71,10 +71,23 @@
     $('.sidebar .close').click(function(e) {
       return $('body').toggleClass('open');
     });
+    $('.author').click(function(e) {
+      $(".author").mod('active', false);
+      $(this).mod('active', true);
+      console.log($('.quotes').data('slick'));
+      return e.preventDefault();
+    });
     $('.quotes').on('init', function(e) {
+      var id;
+      id = $(e.target).find('.slick-current').data('id');
+      $(".author").mod('active', false);
+      $(".author[data-id='" + id + "']").mod('active', true);
       return setBG($(e.target).find('.slick-current'));
     }).on('afterChange', function(e) {
-      console.log(e.target);
+      var id;
+      id = $(e.target).find('.slick-current').data('id');
+      $(".author").mod('active', false);
+      $(".author[data-id='" + id + "']").mod('active', true);
       return setBG($(e.target).find('.slick-current'));
     }).slick({
       infinite: true,

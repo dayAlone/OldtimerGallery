@@ -60,13 +60,22 @@ $(document).ready ->
 	$('.sidebar .close').click (e)->
 		$('body').toggleClass 'open'
 
-
+	$('.author').click (e)->
+		$(".author").mod 'active', false
+		$(this).mod 'active', true
+		console.log $('.quotes').data('slick')
+		e.preventDefault()
 	$('.quotes')
 		.on('init', (e)->
+			id = $(e.target).find('.slick-current').data('id')
+			$(".author").mod 'active', false
+			$(".author[data-id='#{id}']").mod 'active', true
 			setBG $(e.target).find('.slick-current')
 		)
 		.on('afterChange', (e)->
-			console.log e.target
+			id = $(e.target).find('.slick-current').data('id')
+			$(".author").mod 'active', false
+			$(".author[data-id='#{id}']").mod 'active', true
 			setBG $(e.target).find('.slick-current')
 		).slick
 			infinite: true
