@@ -1,3 +1,21 @@
+spinOptions =
+	lines     : 13
+	length    : 21
+	width     : 2
+	radius    : 24
+	corners   : 0
+	rotate    : 0
+	direction : 1
+	color     : '#870b24'
+	speed     : 1
+	trail     : 68
+	shadow    : false
+	hwaccel   : false
+	className : 'spinner'
+	zIndex    : 2e9
+	top       : '50%'
+	left      : '50%'
+
 delay = (ms, func) -> setTimeout func, ms
 
 end = 'transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd'
@@ -57,6 +75,7 @@ setBG = ($el)->
 	$('.quote__arrow').find('path#arrow').attr 'fill', $el.data 'border'
 
 $(document).ready ->
+	$('#Modal .text').spin spinOptions
 	$('.sidebar .close').click (e)->
 		$('body').toggleClass 'open'
 

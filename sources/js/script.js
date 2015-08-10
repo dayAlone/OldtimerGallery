@@ -1,5 +1,24 @@
 (function() {
-  var calculateLayout, delay, end, setBG;
+  var calculateLayout, delay, end, setBG, spinOptions;
+
+  spinOptions = {
+    lines: 13,
+    length: 21,
+    width: 2,
+    radius: 24,
+    corners: 0,
+    rotate: 0,
+    direction: 1,
+    color: '#870b24',
+    speed: 1,
+    trail: 68,
+    shadow: false,
+    hwaccel: false,
+    className: 'spinner',
+    zIndex: 2e9,
+    top: '50%',
+    left: '50%'
+  };
 
   delay = function(ms, func) {
     return setTimeout(func, ms);
@@ -68,6 +87,7 @@
   };
 
   $(document).ready(function() {
+    $('#Modal .text').spin(spinOptions);
     $('.sidebar .close').click(function(e) {
       return $('body').toggleClass('open');
     });

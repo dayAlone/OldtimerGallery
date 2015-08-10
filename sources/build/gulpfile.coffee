@@ -24,7 +24,7 @@ replace      = require 'gulp-replace'
 watch        = require 'gulp-watch'
 imageop      = require 'gulp-image-optimization'
 
-plugins  = [ 'jquery', 'modernizr', 'lodash', 'slick', 'bootstrap', 'browser', 'bem', 'scrollbar', 'hoverIntent' ]
+plugins  = [ 'jquery', 'modernizr', 'lodash', 'slick', 'bootstrap', 'browser', 'bem', 'scrollbar', 'hoverIntent', 'spin' ]
 
 layout   = 'public_html/layout'
 sources  = 'sources/'
