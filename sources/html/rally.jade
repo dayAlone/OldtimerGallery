@@ -3,7 +3,7 @@ include includes/header
 - var activeItem = 2
 include includes/sidebar
 .page
-	.page__block.page__block--promo.page__block--black(style="background-image:url(/layout/images/zaezd-bg-inside.jpg)")
+	.page__block.page__block--promo.page__block--red(style="background-image:url(/layout/images/zaezd-bg-inside.jpg)")
 		img.page__image(src="/layout/images/person-zaezd.png")
 		.page__content
 			h1.page__title Заезды
@@ -17,12 +17,97 @@ include includes/sidebar
 			.map__frame
 				.map__zoom(href="#Map", data-toggle="modal")
 				
-	#articles.page__block.page__block--red
+	#articles.page__block.page__block--red2
 		.center.md-left
 			h2.page__title расписание зaeздов
 			.page__divider
+		.shedule.row
+			.col-md-6
+				.shedule__day
+					.shedule__date 17 сентября, четверг
+					.shedule__event
+						.shedule__time 14:30
+						.shedule__name демонстрация фрагментов фильма "Погоня за скоростью"
+					.shedule__event
+						.shedule__time 15:00
+						.shedule__name черлидинг-шоу
+					.shedule__event
+						.shedule__time 15:15 
+						.shedule__name показательные заезды по окончании - представление пилотов, автограф-сессия (ведущий - Марк Подольский)
+			.col-md-6
+				.shedule__day
+					.shedule__date 18 сентября, четверг
+					.shedule__event
+						.shedule__time 14:30
+						.shedule__name демонстрация фрагментов фильма "Погоня за скоростью"
+					.shedule__event
+						.shedule__time 15:00
+						.shedule__name черлидинг-шоу
+					.shedule__event
+						.shedule__time 15:15 
+						.shedule__name показательные заезды по окончании - представление пилотов, автограф-сессия (ведущий - Марк Подольский)
+			.col-md-12.visible-md.visible-lg
+			.col-md-6
+				.shedule__day
+					.shedule__date 19 сентября, четверг
+					.shedule__event
+						.shedule__time 14:30
+						.shedule__name демонстрация фрагментов фильма "Погоня за скоростью"
+					.shedule__event
+						.shedule__time 15:00
+						.shedule__name черлидинг-шоу
+					.shedule__event
+						.shedule__time 15:15 
+						.shedule__name показательные заезды по окончании - представление пилотов, автограф-сессия (ведущий - Андрей Леонтьев)
+			.col-md-6
+				.shedule__day
+					.shedule__date 20 сентября, четверг
+					.shedule__event
+						.shedule__time 12:30
+						.shedule__name демонстрация фрагментов фильма "Погоня за скоростью"
+					.shedule__event
+						.shedule__time 13:00
+						.shedule__name черлидинг-шоу
+					.shedule__event
+						.shedule__time 13:15 
+						.shedule__name показательные заезды по окончании - представление пилотов, автограф-сессия (ведущий - Андрей Леонтьев)
+
 		.center.xxl-margin-top.xxl-padding-top
 			a.button(href="/buy.html") насладиться зрелищем
+	
+	#video.page__block.page__block--black(style="background-image:url(/layout/images/bg-rally.jpg)")
+		video.video(autoplay="autoplay", loop="")
+			source(src="/layout/video/oldtimer2015.mp4", type="video/mp4")
+			source(src="/layout/video/oldtimer2015.ogv", type="video/ogg")
+			source(src="/layout/video/oldtimer2015.webm", type="video/webm")
+		.center.md-left
+			h2.page__title атмосфера
+			.page__divider
+		.row
+			.col-md-6
+				p.big Юбилеям советского автомобильного спорта посвящается…
+				p.big 
+					strong 
+						span.red 75 лет 
+						| – Всесоюзным рекордам скорости,
+					| поставленным на рекордно-гоночных автомобилях ГЛ-1 и ЗИС-101 "Спорт".
+				p.big 
+					strong 
+						span.red 65 лет 
+						| – первым Всесоюзным соревнованиям по автомобильному спорту,
+					| создание спортивных версий автомобилей "Победа" и "Москвич", постройка рекордного болида "Звезда-3М".
+				p.big 
+					strong 
+						span.red 60 лет 
+						| – первым кольцевым гонкам в СССР и первому ралли в СССР,
+					| тогда же, в 1955 году, был построен самый результативный советский болид "Харьков-Л2" и гоночный "Москвич-Г1".
+			.col-md-6
+				p Когда-то они были триумфаторами ралли и марафонов, победителями гонок и рекордных заездов, гордостью отечественного спорта. Созданные талантливыми конструкторами и построенные коллективами энтузиастов, советские спорткары зачастую ничем не уступали своим зарубежным аналогам.
+
+				p Сейчас их имена известны лишь поисковикам и реставраторам: «Харьков», «Лорент», «Звезда», «Киев-Спорт», «Астрада», «Эстония», «Тарту»… Многие считались навсегда утраченными и увидеть их можно было только на фотографиях. Благодаря стараниям энтузиастов-реставраторов стальные герои прошлого возвращаются из небытия – это несколько десятков гоночных, раллийных и кроссовых автомобилей.
+
+				p Появление некоторых из них в паддоке будет неожиданностью даже для специалистов, а участие в показательных заездах станет сенсацией. Многими автомобилями-ветеранами будут управлять пилоты-ветераны – живые легенды советского спорта. И это историческое событие вы сможете увидеть собственными глазами!
+
 .modal.fade(id="Map", tabindex="-1", role="dialog" aria-hidden="true", data-parsley-validate)
 	.modal-dialog
 		.modal-content

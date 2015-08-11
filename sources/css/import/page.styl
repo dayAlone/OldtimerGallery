@@ -109,16 +109,42 @@
 		background-size 100% auto
 		background-repeat repeat-x
 		background-position top center
-		padding 30px 40px
+		padding 45px 40px
 		overflow hidden
 		position relative
 		t background-color
+		> *
+			position relative
+			z-index 10
 		h4
 			font-family title
 			text-transform uppercase
 			font-weight bold
 			font-size 23px
 			margin-bottom 20px
+		p
+			span.red
+				color #ff2f31
+			max-width 95%
+			@media (min-width: scr_xs)
+				font-size 15px
+				margin-bottom 22px
+				&.big
+					font-size 18px
+			@media (min-width: scr_md)
+				font-size 18px
+				margin-bottom 25px
+				&.big
+					font-size 23px
+		.video
+			position absolute
+			top 50%
+			left 50%
+			transform translateX(-50%)  translateY(-50%)
+			z-index 2
+			display none
+			@media (min-width: scr_md)
+				display block
 		iframe + h4
 			margin-top 40px
 		@media (min-width: scr_sm)
@@ -134,6 +160,17 @@
 			background-color brown
 		&--red
 			background-color #8f1927
+		&--black
+			background-size cover
+			&:before
+				position absolute
+				top 0
+				left 0
+				width 100%
+				height 100%
+				background url(/layout/images/pattern.png)
+				content ""
+				z-index 9
 		&--red2
 			background-color #61031d
 		&--violet
