@@ -48,6 +48,10 @@
       $pageContent.css({
         'margin-top': -$pageContent.height() / 2
       }, 'min-height', $(window).height() - parseInt($pageContent.css('padding-top')) - parseInt($pageContent.css('padding-bottom')));
+      $('.video').css({
+        'marginTop': -$('.video').height() / 2,
+        'marginLeft': -$('.video').width() / 2
+      });
       $('.toolbar').hide();
       $('.promo').find('img').each(function() {
         return $(this).css({
