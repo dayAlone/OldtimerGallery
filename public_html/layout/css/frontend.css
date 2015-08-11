@@ -5525,11 +5525,6 @@ svg g {
 .authors .author--active {
   color: #000;
 }
-@media (min-width: 1420px) {
-  .articles {
-    margin-top: 30px;
-  }
-}
 .articles .article {
   margin-top: 50px;
 }
