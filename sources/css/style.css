@@ -1061,7 +1061,7 @@ svg g {
   height: 100%;
   padding: 25px 0 15px;
   position: relative;
-  min-height: 500px;
+  min-height: 540px;
 }
 @media (max-height: 800px) and (min-width: 992px) {
   .sidebar__content,
@@ -2141,6 +2141,17 @@ svg g {
 }
 .page__block--promo {
   min-height: calc(100vh - 60px);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+@media (max-width: 505px) {
+  .page__block--promo .xxl-padding-top {
+    padding-top: 0 !important;
+  }
+  .page__block--promo .xxl-margin-top {
+    margin-top: 20px !important;
+  }
 }
 @media (min-width: 505px) {
   .page__block--promo {
