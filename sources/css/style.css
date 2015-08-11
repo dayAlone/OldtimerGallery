@@ -2208,7 +2208,11 @@ svg g {
 @media (min-width: 505px) {
   .page__block--promo {
     min-height: 850px;
-    height: calc(100vh - 80px);
+  }
+}
+@media (min-width: 840px) {
+  .page__block--promo {
+    min-height: calc(100vh - 80px);
   }
 }
 @media (min-width: 992px) {
