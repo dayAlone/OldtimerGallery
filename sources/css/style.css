@@ -2137,6 +2137,11 @@ svg g {
   z-index: 2;
   display: none;
 }
+@media (min-width: 992px) {
+  .page__block .video {
+    display: block;
+  }
+}
 .page__block iframe + h4 {
   margin-top: 40px;
 }
