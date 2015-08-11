@@ -41,8 +41,8 @@ $APPLICATION->SetTitle("Паддок");
 <div id="Map" tabindex="-1" role="dialog" aria-hidden="true" data-parsley-validate class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content"><a data-dismiss="modal" href="#" class="close"></a>
-      <h3 class="center no-margin-bottom">Зона проведения</h3>
-      <div class="center"><img src="/layout/images/scheme-paddok.jpg"></div>
+      <h3 class="center no-margin-bottom">Территория фестиваля</h3>
+      <div class="center"><img src="/layout/images/scheme-paddock.jpg"></div>
     </div>
   </div>
 </div>
