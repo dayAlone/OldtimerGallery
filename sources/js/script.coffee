@@ -77,14 +77,17 @@ setBG = ($el)->
 $(document).ready ->
 	$('#Modal').on('show.bs.modal', (e)->
 		url = $(e.relatedTarget).data 'url'
-		$.get url, (data)->
-			$('#Modal .text')
-				.html $(data).find('.main .articles .item').html()
-				.find('span.date, div.meta').remove()
+		if $('#Modal').data('url') != url
+			$('#Modal').data('url', url)
+				.find('.text').html('').spin spinOptions
+			$.get url, (data)->
+				$('#Modal .text')
+					.html $(data).find('.main .articles .item').html()
+					.find('span.date, div.meta').remove()
 	).find('.text').spin spinOptions
+
 	$('.sidebar .close').click (e)->
 		$('body').toggleClass 'open'
-
 	$('.author').click (e)->
 		$(".author").removeClass 'author--active'
 		$(this).addClass 'author--active'

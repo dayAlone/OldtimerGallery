@@ -90,9 +90,12 @@
     $('#Modal').on('show.bs.modal', function(e) {
       var url;
       url = $(e.relatedTarget).data('url');
-      return $.get(url, function(data) {
-        return $('#Modal .text').html($(data).find('.main .articles .item').html()).find('span.date, div.meta').remove();
-      });
+      if ($('#Modal').data('url') !== url) {
+        $('#Modal').data('url', url).find('.text').html('').spin(spinOptions);
+        return $.get(url, function(data) {
+          return $('#Modal .text').html($(data).find('.main .articles .item').html()).find('span.date, div.meta').remove();
+        });
+      }
     }).find('.text').spin(spinOptions);
     $('.sidebar .close').click(function(e) {
       return $('body').toggleClass('open');
