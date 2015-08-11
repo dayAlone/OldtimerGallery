@@ -4965,7 +4965,7 @@ svg g {
   background-size: 100% auto;
   background-repeat: repeat-x;
   background-position: top center;
-  padding: 40px;
+  padding: 30px 40px;
   overflow: hidden;
   position: relative;
   -webkit-transition-property: background-color;
@@ -4994,17 +4994,12 @@ svg g {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    padding: 60px;
+    padding: 50px;
   }
 }
 @media (min-width: 992px) {
   .page__block {
     padding: 80px 40px 60px;
-  }
-}
-@media (min-height: 700px) and (min-width: 1420px) {
-  .page__block {
-    padding: 120px 60px 100px;
   }
 }
 .page__block--blue {
@@ -5030,9 +5025,6 @@ svg g {
 }
 .page__block--promo {
   min-height: calc(100vh - 60px);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
 }
 @media (max-width: 505px) {
   .page__block--promo .xxl-padding-top {

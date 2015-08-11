@@ -2,7 +2,7 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Купить билет онлайн");
 ?>
-  <div style="background-color: #4d64a6; background-image:url(/layout/images/bg-buy.jpg)" class="page__block page__block--promo page__block--padding page__block--back">
+  <div style="background-color: #4d64a6; background-image:url(/layout/images/bg-buy.jpg);background-size: cover;" class="page__block page__block--promo page__block--padding page__block--back">
     <h2 class="page__title">купить билет онлайн</h2>
     <div class="page__divider"></div>
     <div class="center xxl-margin-top xxl-padding-top">
