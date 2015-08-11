@@ -1063,7 +1063,7 @@ svg g {
   position: relative;
   min-height: 500px;
 }
-@media (max-height: 700px) and (min-width: 992px) {
+@media (max-height: 800px) and (min-width: 992px) {
   .sidebar__content,
   .toolbar__content {
     min-height: 750px;
@@ -1078,7 +1078,7 @@ svg g {
   background-color: #ab0615;
   margin: 20px 0;
 }
-@media (min-height: 730px) {
+@media (min-height: 800px) {
   .sidebar__divider,
   .toolbar__divider,
   .promo__divider,
@@ -1214,11 +1214,11 @@ svg g {
 @media (min-width: 992px) {
   .sidebar .nav,
   .toolbar .nav {
-    margin-top: -80px;
+    margin-top: -100px;
     top: 50%;
   }
 }
-@media (min-height: 730px) and (min-width: 992px) {
+@media (min-height: 800px) and (min-width: 992px) {
   .sidebar .nav,
   .toolbar .nav {
     margin-top: -100px;
@@ -2601,18 +2601,28 @@ svg g {
   }
 }
 .authors {
-  margin-right: -8px;
-  margin-left: -8px;
+  margin-right: -12px;
+  margin-left: -12px;
   text-align: center;
   padding-top: 40px;
 }
 .authors .author {
   display: inline-block;
   text-align: left;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   color: #fff;
-  padding: 0 8px;
+  padding: 6px 12px;
+}
+@media (min-width: 768px) {
+  .authors .author {
+    font-size: 11px;
+  }
+}
+@media (min-width: 1420px) {
+  .authors .author {
+    font-size: 14px;
+  }
 }
 .authors .author:hover,
 .authors .author--active {
