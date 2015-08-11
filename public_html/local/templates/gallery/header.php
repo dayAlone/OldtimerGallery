@@ -67,6 +67,7 @@
           <a href="http://ok.ru/group52509993730118" target="_blank" class="social social--ok"></a>
           <a href="https://www.youtube.com/channel/UCnzr5MbXxV9zrt7_lZJaeMg" target="_blank" class="social social--yt"></a>
       </div>
+      <a href="http://radia.ru" target="_blank" class="copyright">Сделано в RADIA Interactive</a>
     </footer>
   </div>
 </div>
