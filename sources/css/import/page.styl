@@ -35,7 +35,7 @@
 		margin-left 240px
 	&__image
 		margin-bottom 30px
-		position relative
+		position relative !important
 		max-width calc(100% + 80px)
 		.page__block--orange &
 			left -40px
@@ -76,8 +76,7 @@
 		@media (min-width: scr_sm)
 			max-width 75%
 			max-height 95%
-
-			position absolute
+			position absolute !important
 			top 50%
 	&__title
 		text-transform uppercase
@@ -143,8 +142,6 @@
 			transform translateX(-50%)  translateY(-50%)
 			z-index 2
 			display none
-			@media (min-width: scr_md)
-				display block
 		iframe + h4
 			margin-top 40px
 		@media (min-width: scr_sm)
@@ -187,7 +184,7 @@
 			@media (min-width: scr_xs)
 				min-height 850px
 			@media (min-width: 840px)
-				min-height calc(100vh - 80px)
+				height calc(100vh - 80px)
 			@media (min-width: scr_md)
 				min-height 100vh
 			.page__content

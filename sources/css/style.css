@@ -1907,7 +1907,7 @@ svg g {
 }
 .page__image {
   margin-bottom: 30px;
-  position: relative;
+  position: relative !important;
   max-width: calc(100% + 80px);
 }
 .page__block--orange .page__image {
@@ -2028,7 +2028,7 @@ svg g {
   .page__image {
     max-width: 75%;
     max-height: 95%;
-    position: absolute;
+    position: absolute !important;
     top: 50%;
   }
 }
@@ -2137,11 +2137,6 @@ svg g {
   z-index: 2;
   display: none;
 }
-@media (min-width: 992px) {
-  .page__block .video {
-    display: block;
-  }
-}
 .page__block iframe + h4 {
   margin-top: 40px;
 }
@@ -2212,7 +2207,7 @@ svg g {
 }
 @media (min-width: 840px) {
   .page__block--promo {
-    min-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
   }
 }
 @media (min-width: 992px) {
