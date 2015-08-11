@@ -93,6 +93,10 @@ $(document).ready ->
 		$(this).addClass 'author--active'
 		$('.quotes').slick 'slickGoTo', $(this).index()
 		e.preventDefault()
+
+	$('.article a[href="#"]').click (e)->
+		e.preventDefault()
+
 	$('.quotes')
 		.on('init', (e)->
 			id = $(e.target).find('.slick-current').data('id')

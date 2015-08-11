@@ -106,6 +106,9 @@
       $('.quotes').slick('slickGoTo', $(this).index());
       return e.preventDefault();
     });
+    $('.article a[href="#"]').click(function(e) {
+      return e.preventDefault();
+    });
     $('.quotes').on('init', function(e) {
       var id;
       id = $(e.target).find('.slick-current').data('id');
