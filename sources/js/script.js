@@ -54,6 +54,9 @@
         });
       });
     }
+    $('.quotes').each(function() {
+      return $(this).slick('setPosition');
+    });
     if ($(window).width() >= 1024) {
       $('.promos, .promo').height($(window).height());
     } else {

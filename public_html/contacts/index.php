@@ -1,14 +1,13 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Будем рады вас видеть!");
-?>
-  <div style="background-image:url(/layout/images/tickets-bg-new.jpg)" class="page__block page__block--promo">
+?>  <div style="background-image:url(/layout/images/tickets-bg-new.jpg)" class="page__block page__block--promo">
     <h2 class="page__title">БУДЕМ РАДЫ ВАС ВИДЕТЬ!</h2>
     <div class="page__divider"></div>
     <div class="row text">
       <div class="col-lg-4 col-sm-5 col-md-4">
         <h4>Билеты</h4>
-        <p> <strong>Билет в кассе – 700 рублей </strong><br>Билет on-line – 500 рублей <br><a data-toggle="modal" data-target="#Price" href="#Price">Скидки и льготы</a></p>
+        <p>Билет в кассе – 700 рублей<br>Билет on-line – 500 рублей <br><a data-toggle="modal" data-target="#Price" href="#Price">Скидки и льготы</a></p>
       </div>
       <div class="col-lg-4 col-sm-6">
         <h4>Время работы</h4>
