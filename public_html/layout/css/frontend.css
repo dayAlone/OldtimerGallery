@@ -5342,24 +5342,29 @@ svg g {
 .quote__name {
   text-transform: uppercase;
   font-family: 'FuturaOld', 'HelveticaNeue', 'Helvetica Neue', 'Arial', sans-serif;
-  font-size: 28px;
   font-weight: bold;
   line-height: 1.2;
+  font-size: 26px;
 }
 @media (min-width: 1420px) {
   .quote__name {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 .quote__info {
   text-transform: uppercase;
   font-weight: 500;
-  margin-top: 20px;
-  font-size: 17px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .quote__info {
+    font-size: 15px;
+  }
 }
 @media (min-width: 1420px) {
   .quote__info {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .quote__image {
