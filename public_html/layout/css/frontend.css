@@ -3948,7 +3948,7 @@ svg g {
 .sidebar__content,
 .toolbar__content {
   height: 100%;
-  padding: 25px 0;
+  padding: 25px 0 15px;
   position: relative;
   min-height: 500px;
 }
@@ -4003,10 +4003,12 @@ svg g {
   width: 100%;
   text-align: center;
   font-size: 11px;
-  opacity: 0.4;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-  filter: alpha(opacity=40);
-  color: #a4acbb;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  margin-top: 20px;
+  color: #595d65;
+  display: inline-block;
 }
 .sidebar .copyright:hover,
 .toolbar .copyright:hover {
