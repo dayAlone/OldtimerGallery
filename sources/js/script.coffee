@@ -20,6 +20,13 @@ delay = (ms, func) -> setTimeout func, ms
 
 end = 'transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd'
 
+calculateGalleryHeight = ->
+	$('.gallery .slick-list, .gallery__item').each ->
+		h = $(this).width()/2
+		$(this).css
+			height: h
+		 	minHeight: h
+
 calculateLayout = ->
 
 	$('body').removeClass 'open'
@@ -40,6 +47,8 @@ calculateLayout = ->
 		width: $('#video').outerHeight()*(16/9)
 		minHeight: $('#video').outerHeight()
 
+	calculateGalleryHeight()
+
 	if !Modernizr.csstransforms
 		$pageContent = $('.page').elem('block').byMod('promo').find('.page__content')
 		$pageContent.css
@@ -53,9 +62,7 @@ calculateLayout = ->
 			$(this).css
 				'margin-left' : - $(this).width()/2 - 60
 
-	$('.gallery, .gallery__item').css
-	 	minHeight: ->
-			$(this).width()/2
+
 
 	delay 1000, ->
 		$('.quotes, .gallery').each ->
@@ -133,17 +140,15 @@ $(document).ready ->
 			setBG $(e.target).find('.slick-current')
 		).slick slickSettings
 
-	$('.gallery').on('init',->
-		$('.gallery, .gallery__item').css
-		 	minHeight: ->
-				$(this).width()/2
-	).slick _.assign slickSettings, {
-		speed        : 500
-		fade         : true
-		cssEase      : 'linear'
-		autoplay     : true
-		autoplaySpeed: 4000
-	}
+	$('.gallery')
+		.on('init', calculateGalleryHeight)
+		.slick _.assign slickSettings, {
+			speed        : 500
+			fade         : true
+			cssEase      : 'linear'
+			autoplay     : true
+			autoplaySpeed: 4000
+		}
 
 
 	$('.nav-trigger').click (e)->
