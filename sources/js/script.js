@@ -27,7 +27,7 @@
   end = 'transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd';
 
   calculateGalleryHeight = function() {
-    return $('.gallery .slick-list, .gallery__item').each(function() {
+    return $('.gallery, .gallery .slick-list, .gallery__item').each(function() {
       var height;
       height = $(this).width() / 2;
       return $(this).css({

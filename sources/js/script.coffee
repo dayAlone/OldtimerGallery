@@ -21,7 +21,7 @@ delay = (ms, func) -> setTimeout func, ms
 end = 'transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd'
 
 calculateGalleryHeight = ->
-	$('.gallery .slick-list, .gallery__item').each ->
+	$('.gallery, .gallery .slick-list, .gallery__item').each ->
 		height = $(this).width()/2
 		$(this).css
 			'height': height
