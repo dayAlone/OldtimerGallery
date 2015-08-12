@@ -1,7 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Будем рады вас видеть!");
-?>  <div style="background-image:url(/layout/images/tickets-bg-new.jpg)" class="page__block page__block--promo">
+?>  <div style="background-image:url(/layout/images/tickets-bg-new.jpg);background-size: cover;" class="page__block page__block--promo">
     <h2 class="page__title">БУДЕМ РАДЫ ВАС ВИДЕТЬ!</h2>
     <div class="page__divider"></div>
     <div class="row text">

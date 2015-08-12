@@ -4996,6 +4996,11 @@ svg g {
 .page__block p span.red {
   color: #ff2f31;
 }
+@media (min-width: 992px) {
+  .page__block p.lh {
+    line-height: 25px;
+  }
+}
 .page__block p.dib {
   display: inline-block;
 }
