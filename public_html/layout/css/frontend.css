@@ -5455,6 +5455,9 @@ svg g {
   .page .button + .button {
     margin-left: 20px;
   }
+  .page .button + .button:nth-child(3) {
+    margin-left: 0px;
+  }
 }
 @media (min-width: 1420px) {
   .page .button {
