@@ -4992,9 +4992,42 @@ svg g {
 }
 .page__block p {
   max-width: 95%;
+  display: inline-block;
 }
 .page__block p span.red {
   color: #ff2f31;
+}
+.page__block p a {
+  color: #fff;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #fff 50%);
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #fff 50%);
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0) 50%, #fff 50%);
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0) 50%, #fff 50%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, #fff 50%);
+  background-repeat: repeat-x;
+  -webkit-background-size: 2px 2px;
+  -moz-background-size: 2px 2px;
+  background-size: 2px 2px;
+  background-position: 0 100%;
+}
+.page__block p a:hover {
+  text-decoration: none;
+}
+.page__block p a:hover {
+  color: #ab0615;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #ab0615 50%);
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #ab0615 50%);
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0) 50%, #ab0615 50%);
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0) 50%, #ab0615 50%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, #ab0615 50%);
+  background-repeat: repeat-x;
+  -webkit-background-size: 2px 2px;
+  -moz-background-size: 2px 2px;
+  background-size: 2px 2px;
+  background-position: 0 100%;
+}
+.page__block p a:hover:hover {
+  text-decoration: none;
 }
 @media (min-width: 505px) {
   .page__block p {
@@ -5009,6 +5042,9 @@ svg g {
   .page__block p {
     font-size: 18px;
     margin-bottom: 25px;
+  }
+  .page__block p.small {
+    font-size: 14px;
   }
   .page__block p.big {
     font-size: 23px;

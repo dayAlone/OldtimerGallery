@@ -125,6 +125,13 @@
 			span.red
 				color #ff2f31
 			max-width 95%
+			display inline-block
+			a
+				color white
+				border-line @color
+				&:hover
+					color red
+					border-line @color
 			@media (min-width: scr_xs)
 				font-size 15px
 				margin-bottom 22px
@@ -133,6 +140,8 @@
 			@media (min-width: scr_md)
 				font-size 18px
 				margin-bottom 25px
+				&.small
+					font-size 14px
 				&.big
 					font-size 23px
 		.video
