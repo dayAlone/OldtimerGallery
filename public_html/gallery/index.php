@@ -58,6 +58,30 @@ $APPLICATION->SetTitle("Выставка");
 
     <div class="center xxl-margin-top xxl-padding-top"><a href="/buy.html" class="button">увидеть своими глазами</a></div>
   </div>
+  <div id="years" class="page__block page__block--brown">
+    <div class="center md-left">
+      <h2 class="page__title">14 лет успеха</h2>
+      <div class="page__divider"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <p>
+                Олдтаймер-Галерея – единственная в России и крупнейшая в Восточной Европе выставка старинных автомобилей и технического антиквариата.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p>
+                Олдтаймер-Галерея проводится с 2002 года дважды в году – весной и осенью – в крупнейших выставочных центрах Москвы: Сокольниках, Экспоцентре и Крокус-Экспо.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p>
+                Олдтаймер-Галерея – место, где можно приятно и полезно провести семейные выходные. Посетителей любого возраста здесь ждёт много интересного.
+            </p>
+        </div>
+    </div>
+    <div class="center xxl-margin-top xxl-padding-top"><a href="/buy/" class="button">посетить выставку</a></div>
+  </div>
 </div>
 <div id="Map" tabindex="-1" role="dialog" aria-hidden="true" data-parsley-validate class="modal fade">
   <div class="modal-dialog">
