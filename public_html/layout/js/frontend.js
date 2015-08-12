@@ -28101,7 +28101,10 @@ $('#el').spin('flower', 'red');
         return $(this).width() * 0.80677966101;
       }
     });
-    $('.video').width($(window).width());
+    $('.video').css({
+      width: $(window).width(),
+      minHeight: $('#video').height()
+    });
     if (!Modernizr.csstransforms) {
       $pageContent = $('.page').elem('block').byMod('promo').find('.page__content');
       $pageContent.css({
