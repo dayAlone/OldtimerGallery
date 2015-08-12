@@ -2159,7 +2159,7 @@ svg g {
 }
 @media (min-width: 992px) {
   .page__block p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 25px;
   }
   .page__block p.small {
@@ -2167,6 +2167,11 @@ svg g {
   }
   .page__block p.big {
     font-size: 23px;
+  }
+}
+@media (min-width: 1420px) {
+  .page__block p {
+    font-size: 18px;
   }
 }
 .page__block .video {
