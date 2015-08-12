@@ -2090,6 +2090,19 @@ svg g {
   -ms-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+@media (min-width: 768px) {
+  .page__block {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    padding: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .page__block {
+    padding: 80px 50px 60px;
+  }
+}
 .page__block > * {
   position: relative;
   z-index: 10;
@@ -2174,6 +2187,25 @@ svg g {
     font-size: 18px;
   }
 }
+.page__block .gallery {
+  margin-right: -40px;
+  margin-left: -40px;
+}
+.page__block .gallery,
+.page__block .gallery__item {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  min-height: 700px;
+}
+@media (min-width: 768px) {
+  .page__block .gallery {
+    margin-right: -50px;
+    margin-left: -50px;
+  }
+}
 .page__block .video {
   position: absolute;
   top: 50%;
@@ -2193,19 +2225,6 @@ svg g {
 }
 .page__block iframe + h4 {
   margin-top: 40px;
-}
-@media (min-width: 768px) {
-  .page__block {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    padding: 50px;
-  }
-}
-@media (min-width: 992px) {
-  .page__block {
-    padding: 80px 40px 60px;
-  }
 }
 .page__block--blue {
   background-color: #3f609f;

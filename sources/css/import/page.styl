@@ -112,6 +112,11 @@
 		overflow hidden
 		position relative
 		t background-color
+		@media (min-width: scr_sm)
+			background-size cover
+			padding 50px
+		@media (min-width: scr_md)
+			padding 80px 50px 60px
 		> *
 			position relative
 			z-index 10
@@ -151,6 +156,17 @@
 					font-size 23px
 			@media (min-width: scr_lg)
 				font-size 18px
+		.gallery
+			&, &__item
+				background-size cover
+				background-position center center
+				height 50vh
+				min-height 700px
+			margin-right -40px
+			margin-left -40px
+			@media (min-width: scr_sm)
+				margin-right -50px
+				margin-left -50px
 		.video
 			position absolute
 			top 50%
@@ -162,11 +178,7 @@
 				display block
 		iframe + h4
 			margin-top 40px
-		@media (min-width: scr_sm)
-			background-size cover
-			padding 50px
-		@media (min-width: scr_md)
-			padding 80px 40px 60px
+
 		&--blue
 			background-color #3f609f
 		&--blue2

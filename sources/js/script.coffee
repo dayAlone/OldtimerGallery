@@ -55,7 +55,7 @@ calculateLayout = ->
 
 
 	delay 1000, ->
-		$('.quotes').each ->
+		$('.quotes, .gallery').each ->
 			$(this).slick('setPosition')
 
 	if $(window).width() >= 1024
@@ -120,7 +120,8 @@ $(document).ready ->
 			$(".author").removeClass 'author--active'
 			$(".author[data-id='#{id}']").addClass 'author--active'
 			setBG $(e.target).find('.slick-current')
-		).slick
+		)
+	$('.quotes, .gallery').slick
 			infinite: true
 			adaptiveHeight: true
 			slidesToShow: 1

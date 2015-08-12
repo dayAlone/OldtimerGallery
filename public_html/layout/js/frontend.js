@@ -28122,7 +28122,7 @@ $('#el').spin('flower', 'red');
       });
     }
     delay(1000, function() {
-      return $('.quotes').each(function() {
+      return $('.quotes, .gallery').each(function() {
         return $(this).slick('setPosition');
       });
     });
@@ -28193,7 +28193,8 @@ $('#el').spin('flower', 'red');
       $(".author").removeClass('author--active');
       $(".author[data-id='" + id + "']").addClass('author--active');
       return setBG($(e.target).find('.slick-current'));
-    }).slick({
+    });
+    $('.quotes, .gallery').slick({
       infinite: true,
       adaptiveHeight: true,
       slidesToShow: 1,
