@@ -1,0 +1,1 @@
+RewriteRule ^rally/ /races/ [R=302,L]
