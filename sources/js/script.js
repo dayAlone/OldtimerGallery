@@ -44,7 +44,7 @@
     });
     $('.video').css({
       width: $(window).width(),
-      minHeight: $('#video').height()
+      minHeight: $('#video').outerHeight()
     });
     if (!Modernizr.csstransforms) {
       $pageContent = $('.page').elem('block').byMod('promo').find('.page__content');
