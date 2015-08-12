@@ -8,12 +8,12 @@ $srt = urlencode("Билет на Олдтаймер-Галерею, Фести�
     <div class="page__divider"></div>
     <div class="center xxl-margin-top xxl-padding-top">
       <div class="visible-xs">
-        <h4>оплата банковской картой</h4><iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001232198506&quickpay=small&any-card-payment-type=on&button-text=02&button-size=xl&button-color=white&targets=<?=$srt?>&default-sum=500&fio=on&mail=on&successURL=" width="195" height="54"></iframe>
+        <h4>оплата банковской картой</h4><iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001232198506&quickpay=small&any-card-payment-type=on&button-text=02&button-size=xl&button-color=white&targets=<?=$srt?>&default-sum=500&fio=on&mail=on&comment=on&hint=%D0%92%D0%B2%D0%B5%D0%B4%D0%B8%D1%82%D0%B5+%D0%BF%D1%80%D0%BE%D0%BC%D0%BE+%D0%BA%D0%BE%D0%B4&successURL=" width="195" height="54"></iframe>
         <div class="xxl-margin-top xxl-padding-top">
-          <h4>оплата яндекс.деньгами</h4><iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001232198506&quickpay=small&yamoney-payment-type=on&button-text=02&button-size=xl&button-color=white&targets=<?=$srt?>&default-sum=500&fio=on&mail=on&successURL=" width="195" height="54"></iframe>
+          <h4>оплата яндекс.деньгами</h4><iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001232198506&quickpay=small&yamoney-payment-type=on&button-text=02&button-size=xl&button-color=white&targets=<?=$srt?>&default-sum=500&fio=on&mail=on&comment=on&hint=%D0%92%D0%B2%D0%B5%D0%B4%D0%B8%D1%82%D0%B5+%D0%BF%D1%80%D0%BE%D0%BC%D0%BE+%D0%BA%D0%BE%D0%B4&successURL=" width="195" height="54"></iframe>
         </div>
       </div>
-      <div class="hidden-xs"><iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=41001232198506&quickpay=shop&payment-type-choice=on&writer=seller&targets=<?=$srt?>&default-sum=500&button-text=02&mail=on&successURL=www.oldtimer.ru" width="450" height="211"></iframe></div>
+      <div class="hidden-xs"><iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=41001232198506&quickpay=shop&payment-type-choice=on&writer=seller&targets=<?=$srt?>&default-sum=500&button-text=02&mail=on&successURL=42.oldtimer.ru/buy/" width="450" height="211"></iframe></div>
       <div class="center xxl-margin-top ">
         <p class="small dib lh">
           Для покупки нескольких билетов, исправьте сумму на любую, кратную 500 руб.<br>
