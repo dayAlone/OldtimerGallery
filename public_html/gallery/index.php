@@ -38,7 +38,7 @@ $APPLICATION->SetTitle("Выставка");
   </div>
   <div id="reviews" class="page__block page__block--orange">
     <div class="center md-left">
-      <h2 class="page__title">отзывы</h2>
+      <h2 class="page__title">Звёзды говорят</h2>
       <div class="page__divider"></div>
     </div>
     <?
