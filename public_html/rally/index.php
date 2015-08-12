@@ -12,8 +12,7 @@ $APPLICATION->SetTitle("Заезды");
       "PROPERTY_CODE" => array("CLASS", 'BG', 'BUTTONS', 'WHERE')
 
     ));
-?>
-    <div id="articles" class="page__block page__block--red2">
+?>    <div id="articles" class="page__block page__block--red2">
       <div class="center md-left">
         <h2 class="page__title">расписание зaeздов</h2>
         <div class="page__divider"></div>
@@ -24,7 +23,7 @@ $APPLICATION->SetTitle("Заезды");
             <div class="shedule__date">17 сентября, четверг</div>
             <div class="shedule__event">
               <div class="shedule__time">14:30</div>
-              <div class="shedule__name">демонстрация фрагментов фильма "Погоня за скоростью"</div>
+              <div class="shedule__name">демонстрация фрагментов фильма &laquo;Погоня за скоростью&raquo;</div>
             </div>
             <div class="shedule__event">
               <div class="shedule__time">15:00</div>
@@ -32,7 +31,7 @@ $APPLICATION->SetTitle("Заезды");
             </div>
             <div class="shedule__event">
               <div class="shedule__time">15:15 </div>
-              <div class="shedule__name">показательные заезды по окончании - представление пилотов, автограф-сессия (ведущий - Марк Подольский)</div>
+              <div class="shedule__name">показательные заезды <br>по окончании - представление пилотов, автограф-сессия (ведущий - Марк Подольский)</div>
             </div>
           </div>
         </div>
@@ -41,7 +40,7 @@ $APPLICATION->SetTitle("Заезды");
             <div class="shedule__date">18 сентября, четверг</div>
             <div class="shedule__event">
               <div class="shedule__time">14:30</div>
-              <div class="shedule__name">демонстрация фрагментов фильма "Погоня за скоростью"</div>
+              <div class="shedule__name">демонстрация фрагментов фильма &laquo;Погоня за скоростью&raquo;</div>
             </div>
             <div class="shedule__event">
               <div class="shedule__time">15:00</div>
@@ -49,7 +48,7 @@ $APPLICATION->SetTitle("Заезды");
             </div>
             <div class="shedule__event">
               <div class="shedule__time">15:15 </div>
-              <div class="shedule__name">показательные заезды по окончании - представление пилотов, автограф-сессия (ведущий - Марк Подольский)</div>
+              <div class="shedule__name">показательные заезды <br>по окончании - представление пилотов, автограф-сессия (ведущий - Марк Подольский)</div>
             </div>
           </div>
         </div>
@@ -59,7 +58,7 @@ $APPLICATION->SetTitle("Заезды");
             <div class="shedule__date">19 сентября, четверг</div>
             <div class="shedule__event">
               <div class="shedule__time">14:30</div>
-              <div class="shedule__name">демонстрация фрагментов фильма "Погоня за скоростью"</div>
+              <div class="shedule__name">демонстрация фрагментов фильма &laquo;Погоня за скоростью&raquo;</div>
             </div>
             <div class="shedule__event">
               <div class="shedule__time">15:00</div>
@@ -67,7 +66,7 @@ $APPLICATION->SetTitle("Заезды");
             </div>
             <div class="shedule__event">
               <div class="shedule__time">15:15 </div>
-              <div class="shedule__name">показательные заезды по окончании - представление пилотов, автограф-сессия (ведущий - Андрей Леонтьев)</div>
+              <div class="shedule__name">показательные заезды <br>по окончании - представление пилотов, автограф-сессия (ведущий - Андрей Леонтьев)</div>
             </div>
           </div>
         </div>
@@ -76,7 +75,7 @@ $APPLICATION->SetTitle("Заезды");
             <div class="shedule__date">20 сентября, четверг</div>
             <div class="shedule__event">
               <div class="shedule__time">12:30</div>
-              <div class="shedule__name">демонстрация фрагментов фильма "Погоня за скоростью"</div>
+              <div class="shedule__name">демонстрация фрагментов фильма &laquo;Погоня за скоростью&raquo;</div>
             </div>
             <div class="shedule__event">
               <div class="shedule__time">13:00</div>
@@ -84,12 +83,12 @@ $APPLICATION->SetTitle("Заезды");
             </div>
             <div class="shedule__event">
               <div class="shedule__time">13:15 </div>
-              <div class="shedule__name">показательные заезды по окончании - представление пилотов, автограф-сессия (ведущий - Андрей Леонтьев)</div>
+              <div class="shedule__name">показательные заезды <br>по окончании - представление пилотов, автограф-сессия (ведущий - Андрей Леонтьев)</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="center xxl-margin-top xxl-padding-top"><a href="/buy.html" class="button">насладиться зрелищем</a></div>
+      <div class="center xxl-margin-top xxl-padding-top"><a href="/buy/" class="button">Посетить</a></div>
     </div>
     <div id="video" style="background-image:url(/layout/images/bg-rally.jpg)" class="page__block page__block--black">
       <video autoplay="autoplay" loop="" class="video">

@@ -4992,10 +4992,12 @@ svg g {
 }
 .page__block p {
   max-width: 95%;
-  display: inline-block;
 }
 .page__block p span.red {
   color: #ff2f31;
+}
+.page__block p.dib {
+  display: inline-block;
 }
 .page__block p a {
   color: #fff;
@@ -5009,6 +5011,7 @@ svg g {
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
   background-position: 0 100%;
+  text-decoration: none;
 }
 .page__block p a:hover {
   text-decoration: none;

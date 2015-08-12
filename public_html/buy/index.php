@@ -14,7 +14,7 @@ $APPLICATION->SetTitle("Купить билет онлайн");
       </div>
       <div class="hidden-xs"><iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=41001232198506&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%92%D1%85%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9+%D0%B1%D0%B8%D0%BB%D0%B5%D1%82+%D0%BD%D0%B0+%D0%B2%D1%8B%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D1%83+%C2%AB%D0%9E%D0%BB%D0%B4%D1%82%D0%B0%D0%B9%D0%BC%D0%B5%D1%80-%D0%93%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D1%8F%C2%+*&default-sum=500&button-text=03&mail=on&successURL=www.oldtimer.ru" width="450" height="211"></iframe></div>
       <div class="center xxl-margin-top xl-line-height">
-        <p class="small">
+        <p class="small dib">
           Для покупки нескольких билетов, исправьте сумму на любую, кратную 500 руб.<br>
           Электронные билеты рассылаются в автоматическом режиме в течение 15 минут после оплаты.<br>
           Если оплаченный билет не получен Вами в течение часа, напишите нам на
