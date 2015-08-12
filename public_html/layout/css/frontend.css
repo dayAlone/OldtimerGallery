@@ -5448,15 +5448,17 @@ svg g {
     font-size: 18px;
   }
 }
+@media (min-width: 992px) {
+  .page .button:nth-child(3) {
+    margin-left: 0px !important;
+  }
+}
 .page .button + .button {
   margin-top: 10px;
 }
 @media (min-width: 505px) {
   .page .button + .button {
     margin-left: 20px;
-  }
-  .page .button + .button:nth-child(3) {
-    margin-left: 0px;
   }
 }
 @media (min-width: 1420px) {
