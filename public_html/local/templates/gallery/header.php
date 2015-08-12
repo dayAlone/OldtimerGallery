@@ -44,7 +44,7 @@
   </div>
 </div>
 <div class="sidebar">
-  <div class="sidebar__content"><a href="/" class="back">На главную</a><a href="#" class="close"></a>
+  <div class="sidebar__content"><a href="http://oldtimer.ru/" class="back">На главную</a><a href="#" class="close"></a>
     <div class="logo"><a href="/" class="logo__image"></a>
       <div class="logo__text"></div>
     </div>
