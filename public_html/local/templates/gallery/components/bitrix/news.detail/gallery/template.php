@@ -29,6 +29,6 @@ usort($gallery, "images_sort");
 
 <div class="gallery">
     <? foreach($gallery as $image):?>
-    <div class="gallery__item" style="background: url(<?=CFile::GetPath($image)?>)"></div>
+    <div class="gallery__item" style="background: url(<?=CFile::GetPath($image['value'])?>)"></div>
     <?endforeach;?>
 </div>
