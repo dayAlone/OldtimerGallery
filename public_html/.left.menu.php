@@ -16,7 +16,7 @@ $aMenuLinks = Array(
     ),
     Array(
         "заезды",
-        "/rally/",
+        "/races/",
         array(),
         array('BIG'=>true),
         ""
