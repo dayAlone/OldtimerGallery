@@ -5077,6 +5077,7 @@ svg g {
   }
 }
 .page__block .gallery {
+  overflow: hidden;
   margin-right: -40px;
   margin-left: -40px;
   margin-top: -45px;
