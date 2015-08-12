@@ -161,13 +161,15 @@
 			margin-right -40px
 			margin-left -40px
 			margin-top -45px
+			margin-bottom 20px
 			&, &__item
 				background-size cover !important
 				background-position center center !important
 				height 50vh
 				min-height 700px
 			& + .center
-				margin-bottom 50px
+				@media (min-width: scr_xs)
+					margin-bottom 0px
 			.slick-arrow
 				z-index 200
 				&.slick-prev
@@ -369,7 +371,7 @@
 		@media (min-width: scr_xs)
 			font-size 18px
 		@media (min-width: scr_md)
-			&:nth-child(2)
+			&:nth-child(3n)
 				margin-left 0px !important
 		& + .button
 			margin-top 10px

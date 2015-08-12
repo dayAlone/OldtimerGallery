@@ -2191,6 +2191,7 @@ svg g {
   margin-right: -40px;
   margin-left: -40px;
   margin-top: -45px;
+  margin-bottom: 20px;
 }
 .page__block .gallery,
 .page__block .gallery__item {
@@ -2201,8 +2202,10 @@ svg g {
   height: 50vh;
   min-height: 700px;
 }
-.page__block .gallery + .center {
-  margin-bottom: 50px;
+@media (min-width: 505px) {
+  .page__block .gallery + .center {
+    margin-bottom: 0px;
+  }
 }
 .page__block .gallery .slick-arrow {
   z-index: 200;
@@ -2560,7 +2563,7 @@ svg g {
   }
 }
 @media (min-width: 992px) {
-  .page .button:nth-child(2) {
+  .page .button:nth-child(3n) {
     margin-left: 0px !important;
   }
 }
