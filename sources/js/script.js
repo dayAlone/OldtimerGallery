@@ -59,8 +59,10 @@
         });
       });
     }
-    $('.quotes').each(function() {
-      return $(this).slick('setPosition');
+    delay(1000, function() {
+      return $('.quotes').each(function() {
+        return $(this).slick('setPosition');
+      });
     });
     if ($(window).width() >= 1024) {
       $('.promos, .promo').height($(window).height());

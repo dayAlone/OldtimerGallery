@@ -51,8 +51,10 @@ calculateLayout = ->
 			$(this).css
 				'margin-left' : - $(this).width()/2 - 60
 
-	$('.quotes').each ->
-		$(this).slick('setPosition')
+
+	delay 1000, ->
+		$('.quotes').each ->
+			$(this).slick('setPosition')
 
 	if $(window).width() >= 1024
 		$('.promos, .promo').height $(window).height()
