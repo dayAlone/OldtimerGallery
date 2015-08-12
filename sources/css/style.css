@@ -2866,9 +2866,8 @@ svg g {
 }
 .articles .article__text {
   font-size: 14px;
-  opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
+  color: #fff;
+  color: rgba(255,255,255,0.8);
 }
 @media (min-width: 992px) {
   .articles .article__text {
