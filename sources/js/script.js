@@ -28,12 +28,11 @@
 
   calculateGalleryHeight = function() {
     return $('.gallery .slick-list, .gallery__item').each(function() {
-      var h;
-      h = $(this).width() / 2;
+      var height;
+      height = $(this).width() / 2;
       return $(this).css({
-        height: h({
-          minHeight: h
-        })
+        'height': height,
+        'minHeight': height
       });
     });
   };

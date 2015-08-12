@@ -22,11 +22,10 @@ end = 'transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransit
 
 calculateGalleryHeight = ->
 	$('.gallery .slick-list, .gallery__item').each ->
-		h = $(this).width()/2
+		height = $(this).width()/2
 		$(this).css
-			height: h
-		 	minHeight: h
-
+			'height': height
+			'minHeight': height
 calculateLayout = ->
 
 	$('body').removeClass 'open'
