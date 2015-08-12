@@ -28102,7 +28102,7 @@ $('#el').spin('flower', 'red');
       }
     });
     $('.video').css({
-      width: $(window).width(),
+      width: $('#video').outerHeight() * (16 / 9),
       minHeight: $('#video').outerHeight()
     });
     if (!Modernizr.csstransforms) {
