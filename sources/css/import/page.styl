@@ -168,6 +168,7 @@
 			& + .center
 				margin-bottom 50px
 			.slick-arrow
+				z-index 200
 				&.slick-prev
 					left 30px
 				&.slick-next
@@ -175,6 +176,10 @@
 			@media (min-width: scr_sm)
 				margin-right -50px
 				margin-left -50px
+				margin-bottom: -80px
+			@media (min-width: scr_md)
+				margin-bottom: -140px
+			@media (min-width: scr_lg)
 				margin-bottom: -170px
 		.video
 			position absolute

@@ -2203,6 +2203,9 @@ svg g {
 .page__block .gallery + .center {
   margin-bottom: 50px;
 }
+.page__block .gallery .slick-arrow {
+  z-index: 200;
+}
 .page__block .gallery .slick-arrow.slick-prev {
   left: 30px;
 }
@@ -2213,6 +2216,16 @@ svg g {
   .page__block .gallery {
     margin-right: -50px;
     margin-left: -50px;
+    margin-bottom: -80px;
+  }
+}
+@media (min-width: 992px) {
+  .page__block .gallery {
+    margin-bottom: -140px;
+  }
+}
+@media (min-width: 1420px) {
+  .page__block .gallery {
     margin-bottom: -170px;
   }
 }
