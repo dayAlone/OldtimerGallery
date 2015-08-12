@@ -5093,7 +5093,7 @@ svg g {
 }
 @media (min-width: 505px) {
   .page__block .gallery + .center {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
 }
 .page__block .gallery .slick-arrow {
@@ -5451,7 +5451,7 @@ svg g {
     font-size: 18px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 840px) {
   .page .button:nth-child(3n) {
     margin-left: 0px !important;
   }
