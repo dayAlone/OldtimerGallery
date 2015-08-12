@@ -5449,7 +5449,7 @@ svg g {
   }
 }
 @media (min-width: 992px) {
-  .page .button:nth-child(3) {
+  .page .button:nth-child(2) {
     margin-left: 0px !important;
   }
 }

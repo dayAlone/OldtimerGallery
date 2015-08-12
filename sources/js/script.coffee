@@ -142,9 +142,6 @@ $(document).ready ->
 	$('.gallery')
 		.on('init', calculateGalleryHeight)
 		.slick _.assign slickSettings, {
-			speed        : 1000
-			fade         : true
-			cssEase      : 'cubic-bezier(0.445, 0.05, 0.55, 0.95)'
 			autoplay     : true
 			autoplaySpeed: 4000
 		}
