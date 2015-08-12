@@ -133,7 +133,11 @@ $(document).ready ->
 			setBG $(e.target).find('.slick-current')
 		).slick slickSettings
 
-	$('.gallery').slick _.assign slickSettings, {
+	$('.gallery').on('init',->
+		$('.gallery, .gallery__item').css
+		 	minHeight: ->
+				$(this).width()/2
+	).slick _.assign slickSettings, {
 		speed        : 500
 		fade         : true
 		cssEase      : 'linear'

@@ -147,7 +147,11 @@
       $(".author[data-id='" + id + "']").addClass('author--active');
       return setBG($(e.target).find('.slick-current'));
     }).slick(slickSettings);
-    $('.gallery').slick(_.assign(slickSettings, {
+    $('.gallery').on('init', function() {
+      return $('.gallery, .gallery__item').css({
+        minHeight: function() {}
+      }, $(this).width() / 2);
+    }).slick(_.assign(slickSettings, {
       speed: 500,
       fade: true,
       cssEase: 'linear',
