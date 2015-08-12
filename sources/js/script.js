@@ -157,9 +157,9 @@
       return setBG($(e.target).find('.slick-current'));
     }).slick(slickSettings);
     $('.gallery').on('init', calculateGalleryHeight).slick(_.assign(slickSettings, {
-      speed: 500,
+      speed: 1000,
       fade: true,
-      cssEase: 'linear',
+      cssEase: 'easy',
       autoplay: true,
       autoplaySpeed: 4000
     }));
