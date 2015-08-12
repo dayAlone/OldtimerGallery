@@ -157,16 +157,25 @@
 			@media (min-width: scr_lg)
 				font-size 18px
 		.gallery
+
+			margin-right -40px
+			margin-left -40px
 			&, &__item
 				background-size cover
 				background-position center center
 				height 50vh
 				min-height 700px
-			margin-right -40px
-			margin-left -40px
+			& + .center
+				margin-bottom 50px
+			.slick-arrow
+				&.slick-prev
+					left 30px
+				&.slick-next
+					right 30px
 			@media (min-width: scr_sm)
 				margin-right -50px
 				margin-left -50px
+				margin-bottom: -170px
 		.video
 			position absolute
 			top 50%

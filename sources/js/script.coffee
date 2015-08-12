@@ -108,6 +108,14 @@ $(document).ready ->
 	$('.article a[href="#"]').click (e)->
 		e.preventDefault()
 
+	slickSettings =
+		infinite      : true
+		adaptiveHeight: true
+		slidesToShow  : 1
+		slidesToScroll: 1
+		prevArrow     : '<button type="button" class="slick-prev"><img src="/layout/images/left.png"></button>'
+		nextArrow     : '<button type="button" class="slick-next"><img src="/layout/images/right.png"></button>'
+
 	$('.quotes')
 		.on('init', (e)->
 			id = $(e.target).find('.slick-current').data('id')
@@ -120,14 +128,16 @@ $(document).ready ->
 			$(".author").removeClass 'author--active'
 			$(".author[data-id='#{id}']").addClass 'author--active'
 			setBG $(e.target).find('.slick-current')
-		)
-	$('.quotes, .gallery').slick
-			infinite: true
-			adaptiveHeight: true
-			slidesToShow: 1
-			slidesToScroll: 1
-			prevArrow: '<button type="button" class="slick-prev"><img src="/layout/images/left.png"></button>'
-			nextArrow: '<button type="button" class="slick-next"><img src="/layout/images/right.png"></button>'
+		).slick slickSettings
+
+	$('.gallery').slick _.assign slickSettings, {
+		speed        : 500
+		fade         : true
+		cssEase      : 'linear'
+		autoplay     : true
+		autoplaySpeed: 4000
+	}
+
 
 	$('.nav-trigger').click (e)->
 		$('body').toggleClass 'open'

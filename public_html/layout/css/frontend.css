@@ -5089,10 +5089,20 @@ svg g {
   height: 50vh;
   min-height: 700px;
 }
+.page__block .gallery + .center {
+  margin-bottom: 50px;
+}
+.page__block .gallery .slick-arrow.slick-prev {
+  left: 30px;
+}
+.page__block .gallery .slick-arrow.slick-next {
+  right: 30px;
+}
 @media (min-width: 768px) {
   .page__block .gallery {
     margin-right: -50px;
     margin-left: -50px;
+    margin-bottom: -170px;
   }
 }
 .page__block .video {
