@@ -53,6 +53,9 @@ calculateLayout = ->
 			$(this).css
 				'margin-left' : - $(this).width()/2 - 60
 
+	$('.gallery, .gallery__item').css
+	 	minHeight: ->
+			$(this).width()/2
 
 	delay 1000, ->
 		$('.quotes, .gallery').each ->

@@ -62,6 +62,9 @@
         });
       });
     }
+    $('.gallery, .gallery__item').css({
+      minHeight: function() {}
+    }, $(this).width() / 2);
     delay(1000, function() {
       return $('.quotes, .gallery').each(function() {
         return $(this).slick('setPosition');

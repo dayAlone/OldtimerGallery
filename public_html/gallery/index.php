@@ -59,11 +59,17 @@ $APPLICATION->SetTitle("Выставка");
     <div class="center xxl-margin-top xxl-padding-top"><a href="/buy.html" class="button">увидеть своими глазами</a></div>
   </div>
   <div id="years" class="page__block page__block--brown">
-    <div class="gallery">
-        <div class="gallery__item" style="background: url(/layout/images/gallery.jpg)"></div>
-        <div class="gallery__item" style="background: url(/layout/images/gallery.jpg)"></div>
-        <div class="gallery__item" style="background: url(/layout/images/gallery.jpg)"></div>
-    </div>
+    <?
+        $APPLICATION->IncludeComponent("bitrix:news.detail", "gallery", Array(
+          "IBLOCK_ID"     => 42,
+          "ELEMENT_CODE"  => 'gallery',
+          "CHECK_DATES"   => "N",
+          "IBLOCK_TYPE"   => "gallery2015",
+          "SET_TITLE"     => "Y",
+          "CACHE_TYPE"    => "A",
+          "PROPERTY_CODE" => array('IMAGES')
+        ));
+    ?>
     <div class="center md-left">
       <h2 class="page__title">14 лет успеха</h2>
       <div class="page__divider"></div>
