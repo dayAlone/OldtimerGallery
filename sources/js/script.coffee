@@ -46,6 +46,11 @@ calculateLayout = ->
 		width: $('#video').outerHeight()*(16/9)
 		minHeight: $('#video').outerHeight()
 
+	if $('.video').width() < $('.page').width()
+		$('.video').css
+			width: $('#video').outerHeight()
+			minHeight: $('#video').outerHeight()*(16/9)
+
 	calculateGalleryHeight()
 
 	if !Modernizr.csstransforms
