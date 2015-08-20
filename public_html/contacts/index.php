@@ -7,7 +7,18 @@ $APPLICATION->SetTitle("Будем рады вас видеть!");
     <div class="row text">
       <div class="col-lg-4 col-sm-5 col-md-4">
         <h4>Билеты</h4>
-        <p>Билет в кассе – 700 рублей<br>Билет on-line – 500 рублей <br><a data-toggle="modal" data-target="#Price" href="#Price">Скидки и льготы</a></p>
+        <p>
+            <?if(strtotime('17.09.2015 10:00') > time()):?>
+            Билет в кассе – 700 рублей<br>
+            Билет <a href="/buy/">on-line</a> – 500 рублей<br>
+            <a data-toggle="modal" data-target="#Price" href="#Price">Скидки и льготы</a>
+            <?else:?>
+            Полный – 700 руб<br>
+            <a data-toggle="modal" data-target="#Price" href="#Price">Льготный</a> – 500 руб<br>
+            <a data-toggle="modal" data-target="#Price" href="#Price">Семейный</a> – 2000 руб<br>
+            Дошкольники – бесплатно
+            <?endif;?>
+        </p>
       </div>
       <div class="col-lg-4 col-sm-6">
         <h4>Время работы</h4>
