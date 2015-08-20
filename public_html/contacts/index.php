@@ -9,8 +9,8 @@ $APPLICATION->SetTitle("Будем рады вас видеть!");
         <h4>Билеты</h4>
         <p>
             <?if(strtotime('17.09.2015 10:00') > time()):?>
-            Билет в кассе – 700 рублей<br>
-            Билет <a href="/buy/">on-line</a> – 500 рублей<br>
+            В кассах во время выставки – 700 рублей<br>
+            Предварительная <a href="/buy/">on-line</a> продажа – 500 рублей<br>
             <a data-toggle="modal" data-target="#Price" href="#Price">Скидки и льготы</a>
             <?else:?>
             Полный – 700 руб<br>
@@ -24,6 +24,7 @@ $APPLICATION->SetTitle("Будем рады вас видеть!");
         <h4>Время работы</h4>
         <p>17 сентября с 10:00 до 19:00<br>18 сентября с 10:00 до 19:00<br>19 сентября с 10:00 до 19:00<br>20 сентября с 10:00 до 17:00</p>
       </div>
+      <div class="col-sm-12 visible-sm visible-md"></div>
       <div class="col-lg-4 col-sm-6">
         <h4 class="place">Место проведения</h4>
         <p>КВЦ «Сокольники», пав.2
