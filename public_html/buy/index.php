@@ -2,7 +2,7 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Купить билет онлайн");
 $srt = urlencode("Билет на Олдтаймер-Галерею, Фестиваль Стиля и Скорости");
-?>  <div style="background-color: #4d64a6; background-image:url(/layout/images/bg-buy.jpg);background-size: cover;" class="page__block page__block--promo page__block--padding page__block--back">
+?>  <div style="background-color: #4d64a6; background-image:url(/layout/images/bg-buy.jpg);background-size: cover;" class="page__block page__block--padding page__block--back">
     <h2 class="page__title">купить билет онлайн</h2>
     <div class="page__divider"></div>
     <div class="center xxl-margin-top xxl-padding-top">
@@ -20,7 +20,7 @@ $srt = urlencode("Билет на Олдтаймер-Галерею, Фести�
           Электронные билеты рассылаются в автоматическом режиме в течение 15 минут после оплаты.<br>
           Если оплаченный билет не получен Вами в течение часа, напишите нам на
           <a href="mailto:gallery@oldtimer.ru"> gallery@oldtimer.ru</a>
-          <br><br>Официальный билетный партнёр <a href="http://www.redkassa.ru" target="_blank">RedKassa.ru</a>
+          <br><br>Официальный билетный партнёр <a href="http://www.redkassa.ru/events/84307-bilety_na_vistavku_oldtaimer_galereya" target="_blank">RedKassa.ru</a>
         </p>
       </div>
     </div>
