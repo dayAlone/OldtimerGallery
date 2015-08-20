@@ -5181,6 +5181,9 @@ svg g {
 .page__block--orange {
   background-color: #a86946;
 }
+.page__block--padding {
+  min-height: calc(100vh - 60px);
+}
 .page__block--promo {
   min-height: calc(100vh - 60px);
 }
