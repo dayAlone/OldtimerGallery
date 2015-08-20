@@ -48,8 +48,8 @@ calculateLayout = ->
 
 	if $('.video').width() < $('.page').width()
 		$('.video').css
-			width: $('#video').outerHeight()
-			minHeight: $('#video').outerHeight()*(16/9)
+			width: $('#video').outerWidth()
+			minHeight: $('#video').outerWidth()*(16/9)
 
 	calculateGalleryHeight()
 
