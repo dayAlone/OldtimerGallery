@@ -4735,7 +4735,7 @@ svg g {
     font-size: 16px;
   }
 }
-.text > div {
+.text .content > div {
   float: none !important;
 }
 .text h4 {
