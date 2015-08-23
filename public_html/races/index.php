@@ -37,7 +37,7 @@ $APPLICATION->SetTitle("Заезды");
         </div>
         <div class="col-md-6">
           <div class="shedule__day">
-            <div class="shedule__date">18 сентября, четверг</div>
+            <div class="shedule__date">18 сентября, пятница</div>
             <div class="shedule__event">
               <div class="shedule__time">14:30</div>
               <div class="shedule__name">демонстрация фрагментов фильма «Погоня за скоростью»</div>
@@ -55,7 +55,7 @@ $APPLICATION->SetTitle("Заезды");
         <div class="col-md-12 visible-md visible-lg"></div>
         <div class="col-md-6">
           <div class="shedule__day">
-            <div class="shedule__date">19 сентября, четверг</div>
+            <div class="shedule__date">19 сентября, суббота</div>
             <div class="shedule__event">
               <div class="shedule__time">14:30</div>
               <div class="shedule__name">демонстрация фрагментов фильма «Погоня за скоростью»</div>
@@ -72,7 +72,7 @@ $APPLICATION->SetTitle("Заезды");
         </div>
         <div class="col-md-6">
           <div class="shedule__day">
-            <div class="shedule__date">20 сентября, четверг</div>
+            <div class="shedule__date">20 сентября, воскресенье</div>
             <div class="shedule__event">
               <div class="shedule__time">12:30</div>
               <div class="shedule__name">демонстрация фрагментов фильма «Погоня за скоростью»</div>

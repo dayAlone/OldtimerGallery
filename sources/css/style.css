@@ -1846,6 +1846,9 @@ svg g {
     font-size: 16px;
   }
 }
+.text > div {
+  float: none !important;
+}
 .text h4 {
   font-family: 'FuturaOld', 'HelveticaNeue', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 25px;
